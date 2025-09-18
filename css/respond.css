@@ -1,0 +1,186 @@
+/* 1280px */
+@media screen and (max-width:1280px) {
+  .header-wrap {
+    padding: 0 3rem;
+  }
+
+  .main-menu {
+    gap: 60px;
+  }
+
+  .inner {
+    margin: 7vh 0;
+    padding: 3rem;
+  }
+
+  .slider-pager {
+    left: 3rem;
+    top: 13rem;
+  }
+
+  .tab-menu-list>li {
+    width: 9rem;
+  }
+
+  .ticket-menu-wrap {
+    margin-top: 6rem;
+  }
+
+  .ticket-content-wrap {
+    height: 8rem;
+  }
+
+  .ticket-search {
+    padding: 2rem 1.5rem;
+    width: 0;
+  }
+
+  .itinerary>img,
+  .celender>img {
+    margin-top: 4.4rem;
+  }
+
+  .ticket-menu-wrap>button {
+    font-size: 18px;
+  }
+
+  .date>button,
+  .itinerary>.button,
+  .person>button {
+    font-size: 18px;
+  }
+
+  .date>img {
+    display: none;
+  }
+
+  .person>img {
+    display: none;
+  }
+
+  /* section title */
+  .fav-wrap h2 {
+    font-size: 38px;
+  }
+
+  .notice-title {
+    font-size: 38px;
+  }
+
+  /* section2 */
+  .fav-title-wrap {
+    margin-bottom: 40px;
+  }
+
+  .fav-list .text-box .fav-title {
+    font-size: 20px;
+  }
+
+  .fav-wrap .fav-list>div {
+    width: 12rem;
+  }
+
+  .fav-list .text-box .fav-price {
+    font-size: 42px;
+  }
+
+  .fav-title {
+    display: block;
+  }
+
+  .fav-list .text-box .fav-price p:first-child {
+    font-size: 20px;
+    display: flex;
+  }
+
+  .fav-list .text-box {
+    left: 30px;
+  }
+
+  /* section3 */
+  .box-title,
+  .event-title {
+    font-size: 26px;
+  }
+
+  .box-article {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .cate-title {
+    margin-bottom: 20px;
+  }
+
+  /* section 4 */
+  .banner img {
+    width: 21rem;
+  }
+
+
+  /* FAQ */
+  .benefit-wrap>div>.section-title {
+    font-size: 36px;
+  }
+
+  .faq-tab>.tab {
+    font-size: 18px;
+  }
+
+  .faq-top>.section-title {
+    font-size: 36px;
+  }
+
+  .faq-list>.faq-item {
+    width: 16.8rem;
+    height: 11rem;
+    padding: 16px 20px;
+
+  }
+
+  .faq-wrap {
+    margin-top: 5rem;
+  }
+
+  .footer-wrap {
+    padding: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width:1128px) {
+  .faq-list>.faq-item {
+    width: 14.7rem;
+    height: 11rem;
+    padding: 16px 20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .ticket-wrap .inner {
+    top: 2vh;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .gnb {
+    display: none;
+  }
+
+  .ticket-content-wrap {
+    display: block;
+    height: 24rem;
+  }
+
+  .ticket-menu-wrap {
+    margin-top: 2rem;
+  }
+
+  .notice-wrap .contents, .notice-list{
+    display: block;
+   
+  }
+}
+
+@media screen and (max-width:640px) {}
