@@ -11,10 +11,11 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="images/png" href="./images/favicon.ico">
   <link rel="stylesheet" href="./css/respond.css">
+  <script defer src="./js/faq.js"></script>
 </head>
 
 <body>
-  <header>
+<header>
     <div class="header-wrap">
       <h1 class="logo"><a href="#"><img src="./images/Aerok-logo.svg" alt="에어로케이 로고"></a></h1>
       <div class="nav">
@@ -156,7 +157,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> 
 
   <!-- 수정 inner 삭제-->
   <main>
@@ -328,7 +329,6 @@
       </div>
     </section>
 
-
     <section class="notice-wrap">
       <div class="notification-box">
 
@@ -396,7 +396,6 @@
       </div>
     </section>
 
-    
     <section class="FAQ">
       <!-- 수정 inner 추가 -->
       <div class="inner">
@@ -456,21 +455,22 @@
               <h2 class="section-title">자주 묻는 질문</h2>
               <!-- 탭 -->
               <ul class="faq-tab">
-                <li class="tab active"><a href="#">예약 발권</a></li>
-                <li class="tab"><a href="#">결제</a></li>
-                <li class="tab"><a href="#">취소/환불</a></li>
-                <li class="tab"><a href="#">유/소아</a></li>
-                <li class="tab"><a href="#">단체</a></li>
+                <li class="tab active"><a href="#void">예약 발권</a></li>
+                <li class="tab"><a href="#void">결제</a></li>
+                <li class="tab"><a href="#void">취소/환불</a></li>
+                <li class="tab"><a href="#void">유/소아</a></li>
+                <li class="tab"><a href="#void">단체</a></li>
               </ul>
             </div>
             <img src="./images/more-btn.svg" alt="더보기 버튼" class="more-btn">
           </div>
 
           <!-- 질문 리스트 -->
-          <ul class="faq-list">
+          <!-- ul.faq-list*5>li.faq-item*4>div.faq-content>a[href="#"].faq-items>p.faq-Q{Q}+p -->
+          <ul class="faq-list active">
             <li class="faq-item">
               <div class="faq-content">
-                <a href="#" class="faq-items">
+                <a href="#void" class="faq-items">
                   <p class="faq-Q">Q</p>
                   <p>예약 시 항공편 조회 및 예약 가능 시기는 출발 며칠 전부터 가능한가요?</p>
                 </a>
@@ -478,7 +478,7 @@
             </li>
             <li class="faq-item">
               <div class="faq-content">
-                <a href="#" class="faq-items">
+                <a href="#void" class="faq-items">
                   <p class="faq-Q">Q</p>
                   <p>왕복 항공권을 소지하고 있는데, 첫번째 구간을 사용하지 않고 두번째 구간은 먼저 사용할 수 있나요?</p>
                 </a>
@@ -486,7 +486,7 @@
             </li>
             <li class="faq-item">
               <div class="faq-content">
-                <a href="#" class="faq-items">
+                <a href="#void" class="faq-items">
                   <p class="faq-Q">Q</p>
                   <p>옆 좌석 추가 구매후 2좌석을 점유하여 이용하고 싶습니다. 구매가 가능한가요?</p>
                 </a>
@@ -494,9 +494,145 @@
             </li>
             <li class="faq-item">
               <div class="faq-content">
-                <a href="#" class="faq-items">
+                <a href="#void" class="faq-items">
                   <p class="faq-Q">Q</p>
                   <p>성인, 소아, 유아의 나이 구분은 어떻게 되나요?</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq-list">
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>항공권 결제 시 체크 카드도 결제가 가능한가요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>두 개 이상의 신용카드로 결제 할 수 있나요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>해외 발행 신용 카드로 결제가 가능한가요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>결제 수단은 어떤 것들이 있나요?</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq-list">
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>항공권 구매 시 카드 결제 후 예약을 취소하려고 합니다. 환불은 어떻게 하는건가요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>미사용 구간에 대한 환불이 가능한가요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>구매 시 사용했던 카드 해지 후 항공권 환불신청을 하였습니다. 환불 절차가 어떻게 되나요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>항공권 환불 후 결제 금액이 청구되었습니다. 어떻게 해야하나요?</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq-list">
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>성인, 소아, 유아의 나이 구분은 어떻게 되나요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>항공권 예약 시 동반 유아도 별도로 좌석을 구매해야 하나요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>유아의 탑승 가능 시기는 언제부터 인가요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>유모차를 가지고 갈 수 있나요?</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq-list">
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>단체 항공권은 홈페이지에서 예매 가능한가요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>단체 항공권 취소 수수료는 얼마인가요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>단체 항공권 결제 기한이란 무엇인가요?</p>
+                </a>
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="faq-content">
+                <a href="#void" class="faq-items">
+                  <p class="faq-Q">Q</p>
+                  <p>단체 항공권 예매 후 양도가 가능할까요?</p>
                 </a>
               </div>
             </li>
@@ -507,9 +643,9 @@
 
   </main>
 
-  <footer>
+  <!-- <footer>
     <div class="footer-wrap">
-      <div class="top-btn"><a href="#"><img src="./images/top-icon.svg" alt="top버튼"></a></div>
+      <div class="top-btn"><a href="#void"><img src="./images/top-icon.svg" alt="top버튼"></a></div>
       <div class="footer-top">
         <div class="footer-top-left">
           <ul class="footer-menu">
@@ -573,7 +709,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
 
 

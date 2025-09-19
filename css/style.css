@@ -27,8 +27,8 @@ html {
 }
 
 section {
-  height:100vh;
-  min-height:805px;
+  height: 100vh;
+  min-height: 805px;
   overflow: hidden;
 }
 
@@ -798,8 +798,27 @@ span {
 
 
 .faq-list {
-  display: flex;
+  display: none;
+  /* display: flex; */
   gap: 30px;
+    transform: translateY(-20px);
+}
+
+.faq-list.active {
+  display: flex;
+  animation: fadeAni 0.8s;
+}
+
+@keyframes fadeAni {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
 }
 
 .faq-list>.faq-item {
