@@ -91,51 +91,55 @@ let benefitSwiper = new Swiper(".benefit-wrap", {
     }
 })
 
+
+
 let faqSwiper = new Swiper(".faq-swiper", {
-      slidesPerView: 1,
-    breakpoints: {
-        //480~767
-        480: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        //768~1024
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        //1024 ~~~
-        1024: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-        }
+  slidesPerView: 1,
+  spaceBetween: 20, // 기본 간격
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
-    });
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 
 
 
 //section4 _ faqTap
 
-let tabTitles2 = document.querySelectorAll(".faq-tab>li");
+let tabTitles2 = document.querySelectorAll(".faq-tab > li");
 let faqList = document.querySelectorAll(".faq-list");
 
-
 tabTitles2.forEach((tab, id) => {
-    console.log(tabTitles);
-    tab.addEventListener("click", () => {
-        tabTitles2.forEach((t, i) => {
-            t.classList.remove("active");
-            faqList[i].classList.remove("active");
-        })
-        tab.classList.add("active");
-        faqList[id].classList.add("active");
-        //추가: 선택된 faqList[id]로 스크롤 이동
+  tab.addEventListener("click", () => {
+    // 모든 탭 & 리스트 초기화
+    tabTitles2.forEach((t, i) => {
+      t.classList.remove("active");
+      faqList[i].classList.remove("active");
+    });
 
-    })
-})
+    // 선택 탭 & 리스트 활성화
+    tab.classList.add("active");
+    faqList[id].classList.add("active");
 
+    // ✅ Swiper 슬라이드 갱신 (DOM이 display:none -> flex로 바뀐 이후)
+    setTimeout(() => {
+      faqSwiper.update();
+      faqSwiper.slideTo(0);
+    }, 100);
+  });
+});
