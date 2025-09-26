@@ -61,6 +61,63 @@ tabTitles.forEach((tab, id) => {
 })
 
 
+
+
+
+
+//section4 _ swiper
+let benefitSwiper = new Swiper(".benefit-wrap", {
+    loop: true,
+    autoplay: {
+        delay: 3000
+    },
+    slidesPerView: 1,
+    breakpoints: {
+        //480~767
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        //768~1024
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        //1024 ~~~
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        }
+    }
+})
+
+let faqSwiper = new Swiper(".faq-swiper", {
+      slidesPerView: 1,
+    breakpoints: {
+        //480~767
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        //768~1024
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        //1024 ~~~
+        1024: {
+            slidesPerView: 4,
+        }
+    },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+
+
 //section4 _ faqTap
 
 let tabTitles2 = document.querySelectorAll(".faq-tab>li");

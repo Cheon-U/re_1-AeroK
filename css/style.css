@@ -112,7 +112,6 @@ section {
 
 .swiper-slide {
   text-align: left;
-  background: #444;
 }
 
 .swiper-slide .text-box {
@@ -626,8 +625,8 @@ section {
 
 .benefit-list {
   display: flex;
-  gap: 30px;
-  overflow-x: auto;
+  /* gap: 30px;
+  overflow-x: auto; */
   /* 가로 스크롤 PC버전에서 가로 스크롤을 없애면
     좌우로 움직이는 적용 X, 자바 배우고 나서 수정해야 됨*/
 }
@@ -643,8 +642,8 @@ section {
 
 .banner img {
   display: block;
-  /* widh:100% */
-  width: 390px;
+  width:100%;
+  /* width: 390px; */
   border-radius: 26px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -746,8 +745,9 @@ section {
 .faq-list {
   display: none;
   /* display: flex; */
+
   gap: 30px;
-  transform: translateY(-20px);
+  margin:2px 2px;
 }
 
 .faq-list.active {
@@ -755,7 +755,7 @@ section {
   animation: fadeAni 0.8s;
 }
 
-@keyframes fadeAni {
+/* @keyframes fadeAni {
   0% {
     opacity: 0;
     transform: translateY(0px);
@@ -765,13 +765,13 @@ section {
     opacity: 1;
     transform: translateY(-20px);
   }
-}
+} */
 
 .faq-list>.faq-item {
   display: flex;
   /* justify-content: center; */
   /* align-items: flex-start; */
-  width: 400px;
+  width: 376px !important;
   height: 220px;
   /* border-outline 명령어는 똑같은데, 
     outline 테두리와 유사하지만 공간을 차지하지 않는다 */

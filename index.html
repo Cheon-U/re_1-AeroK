@@ -497,34 +497,34 @@
         <section class="FAQ">
             <!-- 수정 inner 추가 -->
             <div class="inner">
-                <div class="benefit-wrap">
+                <div class="benefit-wrap swiper">
                     <div>
                         <h2 class="section-title">다양한 혜택</h2>
                         <img src="./images/more-btn.svg" alt="더보기 버튼" class="more-btn">
                     </div>
-                    <ul class="benefit-list">
-                        <li class="benefit-item">
+                    <ul class="benefit-list swiper-wrapper">
+                        <li class="benefit-item swiper-slide">
                             <div class="banner">
                                 <p><a href="#"><img src="./images/banner-1.png" alt="에어로케이 X 라이노손해보험 여행자 보험 배너"></a></p>
                                 <span class="benefit-text">에어로케이 X 라이노손해보험<br>여행자 보험</span>
                             </div>
                         </li>
 
-                        <li class="benefit-item">
+                        <li class="benefit-item swiper-slide">
                             <div class="banner kakaopay">
                                 <p><a href="#"><img src="./images/banner-2.png" alt="카카오페이 결제 시 최대 2만원 할인 배너"></a></p>
                                 <span class="benefit-text">카카오페이 결제 시<br>최대 2만원 할인</span>
                             </div>
                         </li>
 
-                        <li class="benefit-item">
+                        <li class="benefit-item swiper-slide">
                             <div class="banner">
                                 <p><a href="#"><img src="./images/banner-3.png" alt="와이파이 도시락 최대 10% 할인 배너"></a></p>
                                 <span class="benefit-text">와이파이 도시락<br>최대 10% 할인</span>
                             </div>
                         </li>
 
-                        <li class="benefit-item">
+                        <li class="benefit-item swiper-slide">
                             <div class="banner">
                                 <p><a href="#"><img src="./images/banner-4.png" alt="AeroK X kkday 최대 5% 할인 혜택 배너"></a>
                                 </p>
@@ -532,14 +532,14 @@
                             </div>
                         </li>
 
-                        <li class="benefit-item">
+                        <li class="benefit-item swiper-slide">
                             <div class="banner">
                                 <p><a href="#"><img src="./images/banner-5.png" alt="간편 가입, 간편 청구 여행자 보험 배너"></a></p>
                                 <span class="benefit-text">가볍게 가입하고 <br>청구하는 여행자 보험</span>
                             </div>
                         </li>
 
-                        <li class="benefit-item">
+                        <li class="benefit-item swiper-slide">
                             <div class="banner">
                                 <p><a href="#"><img src="./images/banner-6.png" alt="USIM/eSIM 최대 10% 제휴 할인 배너"></a></p>
                                 <span class="benefit-text">USIM/eSIM <br>최대 10% 제휴 할인</span>
@@ -547,7 +547,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- 자주 묻는 질문 섹션 -->
+
                 <!-- 자주 묻는 질문 섹션 -->
                 <div class="faq-wrap">
                     <div class="faq-content-wrap">
@@ -566,43 +566,68 @@
                     </div>
 
                     <!-- 질문 리스트 -->
-                    <!-- ul.faq-list*5>li.faq-item*4>div.faq-content>a[href="#"].faq-items>p.faq-Q{Q}+p -->
-                    <ul class="faq-list active">
-                        <li class="faq-item">
-                            <div class="faq-content">
-                                <a href="#void" class="faq-items">
-                                    <p class="faq-Q">Q</p>
-                                    <p>예약 시 항공편 조회 및 예약 가능 시기는 출발 며칠 전부터 가능한가요?</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="faq-item">
-                            <div class="faq-content">
-                                <a href="#void" class="faq-items">
-                                    <p class="faq-Q">Q</p>
-                                    <p>왕복 항공권을 소지하고 있는데, 첫번째 구간을 사용하지 않고 두번째 구간은 먼저 사용할 수 있나요?</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="faq-item">
-                            <div class="faq-content">
-                                <a href="#void" class="faq-items">
-                                    <p class="faq-Q">Q</p>
-                                    <p>옆 좌석 추가 구매후 2좌석을 점유하여 이용하고 싶습니다. 구매가 가능한가요?</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="faq-item">
-                            <div class="faq-content">
-                                <a href="#void" class="faq-items">
-                                    <p class="faq-Q">Q</p>
-                                    <p>성인, 소아, 유아의 나이 구분은 어떻게 되나요?</p>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="swiper faq-swiper">
+                        <ul class="faq-list active swiper-wrapper">
+                            <li class="faq-item swiper-slide">
+                                <div class="faq-content">
+                                    <a href="#void" class="faq-items">
+                                        <p class="faq-Q">Q</p>
+                                        <p>예약 시 항공편 조회 및 예약 가능 시기는 출발 며칠 전부터 가능한가요?</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="faq-item swiper-slide">
+                                <div class="faq-content">
+                                    <a href="#void" class="faq-items">
+                                        <p class="faq-Q">Q</p>
+                                        <p>왕복 항공권을 소지하고 있는데, 첫번째 구간을 사용하지 않고 두번째 구간은 먼저 사용할 수 있나요?</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="faq-item swiper-slide">
+                                <div class="faq-content">
+                                    <a href="#void" class="faq-items">
+                                        <p class="faq-Q">Q</p>
+                                        <p>옆 좌석 추가 구매후 2좌석을 점유하여 이용하고 싶습니다. 구매가 가능한가요?</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="faq-item swiper-slide">
+                                <div class="faq-content">
+                                    <a href="#void" class="faq-items">
+                                        <p class="faq-Q">Q</p>
+                                        <p>성인, 소아, 유아의 나이 구분은 어떻게 되나요?</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="faq-item swiper-slide">
+                                <div class="faq-content">
+                                    <a href="#" class="faq-items">
+                                        <p class="faq-Q">Q</p>
+                                        <p>출발 날짜를 변경하고 싶을때는 어떻게 해야 하나요?</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="faq-item swiper-slide">
+                                <div class="faq-content">
+                                    <a href="#" class="faq-items">
+                                        <p class="faq-Q">Q</p>
+                                        <p>항공권 예매 가능 시기는 출발 시간 기준 몇시간 전까지인가요?</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="faq-item swiper-slide">
+                                <div class="faq-content">
+                                    <a href="#" class="faq-items">
+                                        <p class="faq-Q">Q</p>
+                                        <p>교통 약자 보행 보조기 운송 시 추가 요금이 발생하나요?</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     <ul class="faq-list">
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -610,7 +635,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -618,7 +643,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -626,7 +651,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -636,7 +661,7 @@
                         </li>
                     </ul>
                     <ul class="faq-list">
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -644,7 +669,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -652,7 +677,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -660,7 +685,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -670,7 +695,7 @@
                         </li>
                     </ul>
                     <ul class="faq-list">
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -678,7 +703,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -686,7 +711,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -694,7 +719,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -704,7 +729,7 @@
                         </li>
                     </ul>
                     <ul class="faq-list">
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -712,7 +737,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -720,7 +745,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
@@ -728,7 +753,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="faq-item">
+                        <li class="faq-item swiper-slide">
                             <div class="faq-content">
                                 <a href="#void" class="faq-items">
                                     <p class="faq-Q">Q</p>
