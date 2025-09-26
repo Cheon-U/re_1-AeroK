@@ -41,6 +41,19 @@ section {
   /* background-color: rgba(0, 255, 0, 0.2); */
 }
 
+/* section title 공통사항 */
+/* 수정 */
+.section-title {
+  font-size: var(--title2);
+  font-weight: 700;
+  color: #222222;
+  padding-left: 0;
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+    /*section1*/
+
 /* 메인슬라이드영역 */
 .main-slider-wrap{
   position:relative;
@@ -99,7 +112,7 @@ section {
 
 .swiper-slide {
   text-align: left;
-  /* background: #444; */
+  background: #444;
 }
 
 .swiper-slide .text-box {
@@ -122,14 +135,7 @@ section {
 }
 
 
-/* 메인비주얼 영역*/
-.ticket-wrap {
-  /* background: #222222; */
-}
-
-/* .ticket-wrap>div {
-  position: relative;
-} */
+/* 티켓영역 */
 
 .ticket-wrap .inner {
   position: absolute;
@@ -210,8 +216,6 @@ section {
 }
 
 
-
-
 /* 날짜선택 */
 .ticket-menu-wrap>div span {
   font-size: 1.1rem;
@@ -271,17 +275,6 @@ section {
   border-right: 1px solid #eee;
 }
 
-/* section title 공통사항 */
-/* 수정 */
-.section-title {
-  font-size: var(--title2);
-  font-weight: 700;
-  color: #222222;
-  padding-left: 0;
-  text-align: left;
-  margin-bottom: 36px;
-}
-
 /* 항공권 검색 버튼, 조회 버튼 */
 .ticket-menu-wrap>div>button {
   width: 100%;
@@ -298,6 +291,7 @@ section {
 .ticket-menu-wrap>div>button:hover {
   background: #FFB411;
 }
+
 
 
 /* section 2 - 지금 뜨는 인기노선 */
@@ -497,7 +491,6 @@ section {
 }
 
 
-
 .notice-list>div {
   height: 320px;
   border-radius: 24px;
@@ -602,10 +595,6 @@ section {
 }
 
 
-
-
-
-
 /* section 4 - 다양한 혜택, 자주하는 질문*/
 
 .benefit-wrap .section-title {
@@ -613,7 +602,7 @@ section {
   color: #222222;
   padding-left: 0;
   left: 0;
-
+  margin:0;
 }
 
 .benefit-wrap div {
@@ -691,6 +680,8 @@ section {
   /* box-shadow: 1px 1px 2px rgba(0, 0, 0,0.5); */
 }
 
+/* faq-wrap */
+
 .faq-wrap {
   margin-top: 100px;
 }
@@ -698,14 +689,16 @@ section {
 .faq-content-wrap {
   display: flex;
   justify-content: space-between;
+  margin-bottom:36px;
 }
 
-.faq-top {
+.faq-wrap>.faq-top {
   align-items: center;
 }
 
 .faq-top>.section-title {
   font-size: 40px;
+  margin:0;
 }
 
 .faq-top,
@@ -751,8 +744,27 @@ section {
 
 
 .faq-list {
-  display: flex;
+  display: none;
+  /* display: flex; */
   gap: 30px;
+  transform: translateY(-20px);
+}
+
+.faq-list.active {
+  display: flex;
+  animation: fadeAni 0.8s;
+}
+
+@keyframes fadeAni {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
 }
 
 .faq-list>.faq-item {
