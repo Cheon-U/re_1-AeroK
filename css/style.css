@@ -742,12 +742,14 @@ section {
 
 
 
+/* faq-list -- swiper */
+
 .faq-list {
   display: none;
   /* display: flex; */
 
   gap: 30px;
-  margin:2px 2px;
+  margin:2px;
 }
 
 .faq-list.active {
@@ -768,17 +770,15 @@ section {
 } */
 
 .faq-list>.faq-item {
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: flex-start; */
-  width: 376px !important;
+  max-width: calc((100% - 60px) / 4);
+  display: block;
   height: 220px;
-  /* border-outline 명령어는 똑같은데, 
-    outline 테두리와 유사하지만 공간을 차지하지 않는다 */
   outline: 2px solid #d9d9d9;
   border-radius: 28px;
   padding: 24px 40px;
+  /* box-sizing: border-box; */
 }
+
 
 .faq-item:hover {
   outline: 2px solid var(--sub-color);

@@ -68,9 +68,9 @@ tabTitles.forEach((tab, id) => {
 //section4 _ swiper
 let benefitSwiper = new Swiper(".benefit-wrap", {
     loop: true,
-    autoplay: {
-        delay: 3000
-    },
+    // autoplay: {
+    //     delay: 3000
+    // },
     slidesPerView: 1,
     breakpoints: {
         //480~767
@@ -107,12 +107,13 @@ let faqSwiper = new Swiper(".faq-swiper", {
         //1024 ~~~
         1024: {
             slidesPerView: 4,
+            spaceBetween: 20,
         }
     },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
     });
 
 
