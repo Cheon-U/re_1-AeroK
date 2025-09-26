@@ -38,7 +38,7 @@ section {
   max-width: 1600px;
   /* 수정 */
   width: 100%;
-  background-color: rgba(0, 255, 0, 0.2);
+  /* background-color: rgba(0, 255, 0, 0.2); */
 }
 
 /* 메인슬라이드영역 */
@@ -55,7 +55,7 @@ section {
   width:100%;
   height:auto;
 
-  background:rgba(177, 5, 14, 0.2);
+  /* background:rgba(177, 5, 14, 0.2); */
 
   top: 280px;
   left: 50%;
@@ -76,7 +76,7 @@ section {
 
   text-align:left;
 
-  background:rgba(177, 5, 14, 0.2);
+  /* background:rgba(177, 5, 14, 0.2); */
 }
 
 .swiper-pagination-bullet {
@@ -99,7 +99,7 @@ section {
 
 .swiper-slide {
   text-align: left;
-  background: #444;
+  /* background: #444; */
 }
 
 .swiper-slide .text-box {
@@ -124,7 +124,7 @@ section {
 
 /* 메인비주얼 영역*/
 .ticket-wrap {
-  background: #222222;
+  /* background: #222222; */
 }
 
 /* .ticket-wrap>div {
