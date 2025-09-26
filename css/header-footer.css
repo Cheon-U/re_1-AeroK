@@ -197,6 +197,7 @@ header {
 /* footer */
 
 footer {
+  margin-top:120px;
   height: 420px;
   display: flex;
   align-items: center;

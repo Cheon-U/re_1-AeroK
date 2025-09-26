@@ -9,7 +9,6 @@
   }
 
   .inner {
-    margin: 7vh 0;
     padding: 3rem;
   }
 
@@ -22,17 +21,18 @@
     width: 9rem;
   }
 
-  .ticket-menu-wrap {
-    margin-top: 6rem;
-  }
-
+  
   .ticket-content-wrap {
     height: 8rem;
   }
 
   .ticket-search {
     padding: 2rem 1.5rem;
-    width: 0;
+
+  }
+
+  section {
+    height: auto;
   }
 
   .itinerary>img,
@@ -97,7 +97,7 @@
     left: 30px;
   }
 
-  /* section3 */
+  /* section3 - 에어로케이의 새로운 소식*/
   .box-title,
   .event-title {
     font-size: 26px;
@@ -110,6 +110,23 @@
 
   .cate-title {
     margin-bottom: 20px;
+  }
+
+  .notice-box1, .notice-box2, .event-banner {
+    margin-bottom: 1.4rem;
+  }
+
+  .event-img img{
+    width: 100%;
+    height: 14rem;
+  }
+  .event-right{
+    gap: 0;
+  }
+
+  .youtube{
+  
+    display: block;
   }
 
   /* section 4 */
@@ -177,9 +194,10 @@
     margin-top: 2rem;
   }
 
-  .notice-wrap .contents, .notice-list{
+  .notice-wrap .contents,
+  .notice-list {
     display: block;
-   
+
   }
 }
 
