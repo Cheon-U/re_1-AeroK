@@ -54,26 +54,103 @@ section {
 }
 
 
-/* 메인비주얼 영역*/
-.ticket-wrap {
-  background-color: #222222;
+
+/* 메인슬라이드영역 */
+.main-slider-wrap{
+  position:relative;
+  width:100%;
+  height:100vh;
 }
 
-.ticket-wrap>div {
-  position: relative;
+.main-slider-wrap .text-box {
+  position: absolute;
+
+  max-width:1600px;
+  width:100%;
+  height:auto;
+
+  background:rgba(177, 5, 14, 0.2);
+
+  top: 240px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3.2rem;
 }
+
+.main-slider-wrap .swiper-pagination {
+  position: absolute;
+
+  max-width:1600px;
+  width:100%;
+  
+  top: 350px;
+  left:50%;
+  transform:translateX(-50%);
+
+  text-align:left;
+
+  background:rgba(177, 5, 14, 0.2);
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+  z-index: 1000;
+  width:15px;
+  height:15px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 50px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: left;
+  background: #444;
+}
+
+.swiper-slide .text-box {
+  z-index: 100;
+}
+
+.swiper-slide .img-box {
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  filter: brightness(68%);
+}
+
+.swiper-slide img,
+.swiper-slide video {
+  display: block;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+
+/* 메인비주얼 영역*/
+.ticket-wrap {
+  background: #222222;
+}
+
+/* .ticket-wrap>div {
+  position: relative;
+} */
 
 .ticket-wrap .inner {
   position: absolute;
-  top: 100px;
+  bottom:0px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-}
-
-.ticket-menu-wrap {
-
-  margin-top: 100px;
 }
 
 .tab-menu-list {
@@ -87,12 +164,12 @@ section {
 }
 
 .tab-menu-list>li {
-  width: 9.85em;
+  width: 9.85rem;
   height: 60px;
   background: #001C40;
   text-align: center;
   line-height: 60px;
-  font-size: 18px;
+  font-size: var(--text3);
   font-weight: 400;
   margin-right: 1px;
   color: #ffffff;
@@ -100,51 +177,44 @@ section {
 }
 
 .ticket-content-wrap {
+  display: none;
+}
+
+.ticket-content-wrap.active {
+  display: block;
+}
+
+/* 티켓 탭내용 */
+.ticket-list {
   height: 145px;
   background: #fff;
   display: flex;
 }
 
 /* 자식들을 1대1대1 */
-.ticket-content-wrap>div {
+.ticket-list>div {
   flex: 1;
 }
 
-.ticket-content-wrap>div>div {
-  flex: 1;
-}
-
-.ticket-menu-wrap>button {
-  width: 100%;
-  height: 70px;
-  color: #222;
-  background: var(--main-color-yellow);
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 70px;
-  border: none;
-  cursor: pointer;
-}
-
-.ticket-menu-wrap>button:hover {
-  background: #FFB411;
-}
 
 /* 출발지,도착지 선택 */
-.itinerary {
+.itinerary,
+.flight-search {
   display: flex;
   border-right: 1px solid #eee;
+  gap: 20px;
 }
 
 .itinerary>img,
-.celender>img {
+.calendar>img,
+.start-date>img {
   width: 24px;
   height: 24px;
   margin-top: 76px;
 }
 
 .ticket-search {
-  width: 12rem;
+  /* width: 14rem; */
   padding: 2.2rem;
   text-align: left;
   border: 0;
@@ -155,124 +225,51 @@ section {
 
 
 
-.ticket-search>p {
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-/* 슬라이드 이미지 */
-/* 수정 */
-.main-slider-wrap {
-  position: relative;
-  overflow: hidden;
-}
-
-.main-slider>div {
-  position: absolute;
-  opacity: 0;
-}
-
-.main-slider .active {
-  position: relative;
-  z-index: 1;
-  opacity: 1;
-}
-
-
-.slide-title {
-  /* width: 100rem; */
-  height: 12rem;
-  margin: 0 auto;
-  color: #fff;
-  z-index: 2;
-  font-size: 46px;
-  font-weight: 600;
-  line-height: 60px;
-
-}
-
-
-.slider1>video {
-  filter: brightness(0.45);
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.slider-pager {
-  z-index: 2;
-  display: flex;
-  gap: 12px;
-  left: 0px;
-  top: 10rem;
-  position: absolute;
-}
-
-.slider-pager>li {
-  border-radius: 60px;
-  height: 14px;
-  width: 14px;
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.slider-pager>li:first-child {
-  width: 40px;
-  height: 14px;
-  background: #fff;
-}
-
-.main-slider img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
 
 /* 날짜선택 */
-span {
-  font-size: 14px;
-  color: #707070;
+.ticket-menu-wrap>div span {
+  font-size: 1.1rem;
+  color: #626262;
+
 }
 
-.celender {
+.calendar {
   border-right: 1px solid #eee;
+  display: flex;
+
+}
+
+.ticket-search>div {
   display: flex;
 }
 
-.celender>div>p {
-  font-size: 24px;
-  font-weight: 600;
-  margin-top: 60px;
-}
-
-
-.ticket-search>.date {
-  padding-top: 22px;
-}
-
-.date>input {
-  font-size: 20px;
-  font-weight: 500;
-  width: 142px;
-  border: transparent;
-  cursor: pointer;
-}
-
-.date>button,
-.itinerary>.button,
-.person>button {
+.ticket-list button,
+.ticket-list input {
+  width: 100%;
   border: transparent;
   background: transparent;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 600;
-  color: #222;
+  color: var(--font-color-gr);
   cursor: pointer;
   text-align: left;
   line-height: 20px;
-  /* width: 10.5rem; */
-  /* align-items: center; */
 }
 
+.ticket-list .date,
+.ticket-list .person,
+.ticket-list input {
+  padding-top: 1.5rem;
+}
+
+.itinerary>div {
+  width: 12.5rem;
+}
+
+.ticket-list button.active,
+.ticket-list input.active {
+  color: #222;
+}
 
 /* 탑승객 선택 */
 
@@ -280,12 +277,42 @@ span {
   display: flex;
 }
 
-.person {
-  display: flex;
-  margin-top: 20px;
-  gap: 10px;
-
+.passengers .ticket-search:nth-child(1) {
+  border-right: 1px solid #eee;
 }
+
+.last-name {
+  border-right: 1px solid #eee;
+}
+
+/* section title 공통사항 */
+/* 수정 */
+.section-title {
+  font-size: var(--title2);
+  font-weight: 700;
+  color: #222222;
+  padding-left: 0;
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+/* 항공권 검색 버튼, 조회 버튼 */
+.ticket-menu-wrap>div>button {
+  width: 100%;
+  height: 70px;
+  color: #222;
+  background: var(--main-color-yellow);
+  font-size: var(--text2);
+  font-weight: 600;
+  line-height: 70px;
+  border: none;
+  cursor: pointer;
+}
+
+.ticket-menu-wrap>div>button:hover {
+  background: #FFB411;
+}
+
 
 
 /* section 2 - 지금 뜨는 인기노선 */
@@ -801,7 +828,7 @@ span {
   display: none;
   /* display: flex; */
   gap: 30px;
-    transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 
 .faq-list.active {
@@ -810,15 +837,15 @@ span {
 }
 
 @keyframes fadeAni {
-    0% {
-        opacity: 0;
-        transform: translateY(0px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(-20px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
 }
 
 .faq-list>.faq-item {

@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #002554;
+    --bg-color: #05183B;
+    --sub-color: #FFB81c;
+    --font-color-bk: #222222;
+    --font-color-gr: #6c737e;
+    --font-color-dark: #666666;
+    --title1: 48px;
+    --title2: 40px;
+    --title3: 30px;
+    --title4: 26px;
+    --title5: 24px;
+    --text1: 22px;
+    --text2: 20px;
+    --text3: 18px;
+    --text4: 16px;
+    --bold: 700;
+    --semi: 600;
+    --medium: 500;
+    --regular: 400;
+
+}
+
+html {
+    font-family: "Pretendard", sans-serif;
+    font-weight: var(--regular);
+}
+
+.popup {
+    width: 1000px;
+    height: 240px;
+    background: #fff;
+    padding: 45px 40px;
+    /* padding-top: 45px;
+    padding-left: 40px; */
+}
+
+.select-seat {
+    position: relative;
+}
+
+.popup-title {
+    font-size: var(--title4);
+    font-weight: var(--semi);
+    color: #062551;
+}
+
+.seat-name {
+    display: flex;
+    margin-top: 55px;
+    gap: 25px;
+
+}
+
+.seat-name p {
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    background: #E9EBEF;
+    text-align: center;
+    align-content: center;
+    font-size: var(--text2);
+    font-weight: var(--medium);
+
+}
+
+.seat-name img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-close {
+    position:absolute;
+    top:0;
+    right:0;
+}

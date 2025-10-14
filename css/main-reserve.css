@@ -1,0 +1,259 @@
+:root {
+    --main-color-yellow: #FEC739;
+    --main-color-blue: #002554;
+    --primary-color: #002554;
+    --bg-color: #05183B;
+    --sub-color: #FFB81c;
+    --font-color-bk: #222222;
+    --font-color-gr: #999;
+    --font-color-dark: #666666;
+    --title1: 4.8rem;
+    --title2: 4.0rem;
+    --title3: 3.0rem;
+    --title4: 2.6rem;
+    --title5: 2.4rem;
+    --text1: 2.2rem;
+    --text2: 2.0rem;
+    --text3: 1.8rem;
+    --text4: 1.6rem;
+    --bold: 700;
+    --semi: 600;
+    --medium: 500;
+    --regular: 400;
+}
+
+html {
+    font-family: "Pretendard", sans-serif;
+    font-size: 10px;
+}
+
+section {
+    height: 100vh;
+    /* height: 100vh; */
+    min-height: 805px;
+    overflow: hidden;
+}
+
+.inner {
+    margin: 120px auto;
+    max-width: 1600px;
+    /* 수정 */
+    width: 100%;
+    /* height: 100vh; */
+    /* padding: 160px 160px; */
+    background-color: rgba(0, 255, 0, 0.2);
+    /* padding-top: 120px;  */
+}
+
+
+
+
+/* 여기서부터 복붙 중간에 슬라이드 부분있으니 주의 */
+
+
+/* 메인비주얼 영역*/
+.ticket-wrap {
+    background: #222222;
+}
+
+.ticket-wrap>div {
+    position: relative;
+}
+
+.ticket-wrap .inner {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.ticket-menu-wrap {
+    margin-top: 100px;
+}
+
+.tab-menu-list {
+    display: flex;
+}
+
+.tab-menu-list .active {
+    background: #fff;
+    color: #222;
+    font-weight: 600;
+}
+
+.tab-menu-list>li {
+    width: 9.85rem;
+    height: 60px;
+    background: #001C40;
+    text-align: center;
+    line-height: 60px;
+    font-size: var(--text3);
+    font-weight: 400;
+    margin-right: 1px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.ticket-content-wrap {
+    display: none;
+}
+
+.ticket-content-wrap.active {
+    display: block;
+}
+
+/* 티켓 탭내용 */
+.ticket-list {
+    height: 145px;
+    background: #fff;
+    display: flex;
+}
+
+/* 자식들을 1대1대1 */
+.ticket-list>div {
+    flex: 1;
+}
+
+.ticket-list>div>div {
+    flex: 1;
+}
+
+/* 출발지,도착지 선택 */
+.itinerary,
+.flight-search {
+    display: flex;
+    border-right: 1px solid #eee;
+}
+
+.itinerary>img,
+.calendar>img,
+.start-date>img {
+    width: 24px;
+    height: 24px;
+    margin-top: 76px;
+}
+
+.ticket-search {
+    width: 100%;
+    padding: 2.2rem;
+    text-align: left;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+/* .ticket-search>p {
+    margin-top: 10px;
+    font-size: var(--text2);
+    font-weight: 600;
+} */
+
+/* 날짜선택 */
+.ticket-menu-wrap>div span {
+    font-size: 1.4rem;
+    color: #626262;
+
+}
+
+.calendar {
+    border-right: 1px solid #eee;
+    display: flex;
+
+}
+
+/* 수정 */
+/* .calendar>div>p {
+    font-size: var(--title5);
+    font-weight: 600;
+    margin-top: 60px;
+} */
+
+
+
+/* .date>input {
+    font-size: var(--text2);
+    font-weight: 500;
+    width: 140px;
+    border: transparent;
+    cursor: pointer;
+} */
+
+.ticket-search>div {
+    display: flex;
+    padding-top: 40px;
+}
+
+.ticket-list button,
+.ticket-list input {
+    width: 100%;
+    border: transparent;
+    background: transparent;
+    font-size: var(--text2);
+    font-weight: 600;
+    color: var(--font-color-gr);
+    cursor: pointer;
+    text-align: left;
+    line-height: 20px;
+}
+
+
+.ticket-list input {
+    padding-top: 40px;
+}
+
+.ticket-list button.active,
+.ticket-list input.active {
+    color: #222;
+}
+
+/* 탑승객 선택 */
+
+.passengers {
+    display: flex;
+}
+
+.passengers>div {
+    border-right: 1px solid #eee;
+}
+
+/* .person {
+    display: flex;
+    gap: 10px;
+} */
+
+.last-name {
+    border-right: 1px solid #eee;
+}
+
+/* section title 공통사항 */
+/* 수정 */
+.section-title {
+    font-size: var(--title2);
+    font-weight: 700;
+    color: #222222;
+    padding-left: 0;
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+/* 항공권 검색 버튼, 조회 버튼 */
+.ticket-menu-wrap>div>button {
+    width: 100%;
+    height: 70px;
+    color: #222;
+    background: var(--main-color-yellow);
+    font-size: var(--text2);
+    font-weight: 600;
+    line-height: 70px;
+    border: none;
+    cursor: pointer;
+}
+
+.ticket-menu-wrap>div>button:hover {
+    background: #FFB411;
+}
+
+
+/* 인기노선 전까지 */
