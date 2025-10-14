@@ -33,7 +33,7 @@ main .subinner {
     height: 60px;
     background-color: #F0F0F0;
     color: #002554;
-    line-height: 3;
+    line-height: 60px;
     text-align: center;
     font-size: 2rem;
 }
