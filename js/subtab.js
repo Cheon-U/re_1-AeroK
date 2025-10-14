@@ -3,20 +3,6 @@ const sub1 = document.querySelector('.sub1');
 const sub2 = document.querySelector('.sub2');
 const desc = document.querySelector('.title .desc');
 
-// header.html 불러오기
-        fetch('header.html')
-            .then(res => res.text())
-            .then(data => {
-                document.querySelector('#header').innerHTML = data;
-            });
-
-        // footer.html 불러오기
-        fetch('footer.html')
-            .then(res => res.text())
-            .then(data => {
-                document.querySelector('#footer').innerHTML = data;
-            });
-            
 tabs.forEach((tab, index) => {
     tab.addEventListener('click', e => {
         e.preventDefault();
