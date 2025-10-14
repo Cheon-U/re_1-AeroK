@@ -7,36 +7,37 @@
   --font-color-bk: #222222;
   --font-color-gr: #6c737e;
   --font-color-dark: #666666;
-  --title1: 48px;
-  --title2: 40px;
-  --title3: 30px;
-  --title4: 26px;
-  --title5: 24px;
-  --text1: 22px;
-  --text2: 20px;
-  --text3: 18px;
-  --text4: 16px;
+  --title1: 4.8rem;
+  --title2: 4.0rem;
+  --title3: 3.0rem;
+  --title4: 2.6rem;
+  --title5: 2.4rem;
+  --title6: 2.8rem;
+  --text1: 2.2rem;
+  --text2: 2.0rem;
+  --text3: 1.8rem;
+  --text4: 1.6rem;
   --bold: 700;
   --semi: 600;
   --medium: 500;
   --regular: 400;
 }
 
+
 html {
   font-family: "Pretendard", sans-serif;
 }
 
+
 section {
-  height: 100vh;
-  min-height: 805px;
+  height: calc(var(--vh) * 100);
+  /* min-height: 805px; */
   overflow: hidden;
 }
 
 .inner {
-  /* margin: auto; */
-  margin: 120px auto;
+  margin: 0 auto;
   max-width: 1600px;
-  /* 수정 */
   width: 100%;
   /* background-color: rgba(0, 255, 0, 0.2); */
 }
@@ -45,28 +46,28 @@ section {
 /* 수정 */
 .section-title {
   font-size: var(--title2);
-  font-weight: 700;
-  color: #222222;
+  font-weight: var(--bold);
+  color: var(--font-color-bk);
   padding-left: 0;
   text-align: left;
   margin-bottom: 36px;
 }
 
-    /*section1*/
+/*section1*/
 
 /* 메인슬라이드영역 */
-.main-slider-wrap{
-  position:relative;
-  width:100%;
-  height:100vh;
+.main-slider-wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .main-slider-wrap .text-box {
   position: absolute;
 
-  max-width:1600px;
-  width:100%;
-  height:auto;
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
 
   /* background:rgba(177, 5, 14, 0.2); */
 
@@ -74,20 +75,20 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 3.2rem;
+  font-size: 4.2rem;
 }
 
 .main-slider-wrap .swiper-pagination {
   position: absolute;
 
-  max-width:1600px;
-  width:100%;
-  
-  top: 380px;
-  left:50%;
-  transform:translateX(-50%);
+  max-width: 1600px;
+  width: 100%;
 
-  text-align:left;
+  top: 380px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  text-align: left;
 
   /* background:rgba(177, 5, 14, 0.2); */
 }
@@ -97,8 +98,8 @@ section {
   border-radius: 10px;
   transition: 0.3s;
   z-index: 1000;
-  width:15px;
-  height:15px;
+  width: 15px;
+  height: 15px;
 }
 
 .swiper-pagination-bullet-active {
@@ -119,8 +120,8 @@ section {
 }
 
 .swiper-slide .img-box {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   filter: brightness(68%);
 }
@@ -129,7 +130,7 @@ section {
 .swiper-slide video {
   display: block;
   width: 100%;
-  height:100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -138,14 +139,23 @@ section {
 
 .ticket-wrap .inner {
   position: absolute;
-  bottom:0px;
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
 }
 
+.ticket-menu-wrap {
+  position: relative;
+}
+
 .tab-menu-list {
+  position: relative;
+  top: 0;
+  left: 0;
+
   display: flex;
+  width: 33.3%;
 }
 
 .tab-menu-list .active {
@@ -155,13 +165,13 @@ section {
 }
 
 .tab-menu-list>li {
-  width: 9.85rem;
+  width: 100%;
   height: 60px;
   background: #001C40;
   text-align: center;
   line-height: 60px;
   font-size: var(--text3);
-  font-weight: 400;
+  font-weight: var(--regular);
   margin-right: 1px;
   color: #ffffff;
   cursor: pointer;
@@ -169,101 +179,95 @@ section {
 
 .ticket-content-wrap {
   display: none;
+  background: #fff
 }
 
 .ticket-content-wrap.active {
   display: block;
 }
 
-/* 티켓 탭내용 */
-.ticket-list {
+
+/* ticket1 항공권예매 */
+.ticket1 {
   height: 145px;
-  background: #fff;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
 }
 
-/* 자식들을 1대1대1 */
-.ticket-list>div {
-  flex: 1;
-}
-
-
-/* 출발지,도착지 선택 */
-.itinerary,
-.flight-search {
-  display: flex;
+.ticket1 .itinerary,
+.ticket1 .calendar {
+  display: grid;
+  grid-template-columns: 1fr 24px 1fr;
   border-right: 1px solid #eee;
   gap: 20px;
+  align-items: center;
 }
 
-.itinerary>img,
-.calendar>img,
-.start-date>img {
+.ticket1 .itinerary>img,
+.ticket1 .calendar>img {
   width: 24px;
   height: 24px;
-  margin-top: 76px;
+}
+
+.calendar .ticket-search img,
+.passengers>div img {
+  margin-right: 8px;
 }
 
 .ticket-search {
-  /* width: 14rem; */
-  padding: 2.2rem;
+  padding: 26px;
   text-align: left;
   border: 0;
   background: transparent;
   cursor: pointer;
-  position: relative;
 }
-
 
 /* 날짜선택 */
 .ticket-menu-wrap>div span {
-  font-size: 1.1rem;
+  font-size: var(--text4);
   color: #626262;
 
 }
 
 .calendar {
   border-right: 1px solid #eee;
-  display: flex;
-
 }
 
 .ticket-search>div {
   display: flex;
 }
 
-.ticket-list button,
-.ticket-list input {
+.ticket-content-wrap button,
+.ticket-content-wrap input {
   width: 100%;
   border: transparent;
   background: transparent;
-  font-size: 1.25em;
-  font-weight: 600;
+  font-size: var(--text2);
+  font-weight: var(--semi);
   color: var(--font-color-gr);
   cursor: pointer;
   text-align: left;
   line-height: 20px;
 }
 
-.ticket-list .date,
-.ticket-list .person,
-.ticket-list input {
-  padding-top: 1.5rem;
+.ticket-content-wrap .date,
+.ticket-content-wrap .person,
+.ticket-content-wrap input {
+  padding-top: 24px;
 }
 
-.itinerary>div {
-  width: 12.5rem;
-}
-
-.ticket-list button.active,
-.ticket-list input.active {
+.ticket-content-wrap button.active,
+.ticket-content-wrap input.active {
   color: #222;
 }
 
+
 /* 탑승객 선택 */
 
-.passengers {
-  display: flex;
+.ticket1 .passengers {
+  display: grid;
+  grid-template-columns: 54% 46%;
 }
 
 .passengers .ticket-search:nth-child(1) {
@@ -274,6 +278,26 @@ section {
   border-right: 1px solid #eee;
 }
 
+.flight-search {
+  border-right: 1px solid #eee;
+}
+
+/* ticket2 예약, ticket3 체크인 */
+.ticket2,
+.ticket3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 50%;
+  height: 145px;
+  align-items: center;
+}
+
+.ticket2 .passenger,
+.ticket3 .passenger {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
 /* 항공권 검색 버튼, 조회 버튼 */
 .ticket-menu-wrap>div>button {
   width: 100%;
@@ -281,10 +305,11 @@ section {
   color: #222;
   background: var(--main-color-yellow);
   font-size: var(--text2);
-  font-weight: 600;
+  font-weight: var(--semi);
   line-height: 70px;
   border: none;
   cursor: pointer;
+  text-align: center;
 }
 
 .ticket-menu-wrap>div>button:hover {
@@ -293,9 +318,13 @@ section {
 
 
 
+
+
 /* section 2 - 지금 뜨는 인기노선 */
 .fav-wrap {
-  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fav-title-wrap {
@@ -309,8 +338,8 @@ section {
 }
 
 .fav-wrap h2 {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: var(--title2);
+  font-weight: var(--bold);
 }
 
 .fav-wrap .fav-list {
@@ -322,13 +351,16 @@ section {
   position: relative;
   transition: 0.8s;
   width: 247px;
-  height: 580px;
+  height: calc(var(--vh)*60);
   border-radius: 28px;
   overflow: hidden;
   position: relative;
 }
 
 .fav-list .img-box>img {
+  height:100%;
+  object-fit: cover;
+  
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -343,35 +375,58 @@ section {
 }
 
 .fav-wrap .fav-list>.active .img-box>img {
+  width:100%;
+  object-fit: cover;
+
   left: 50%;
   transform: translateX(-50%);
 }
 
+.fav-wrap .fav-list>.active .text-box{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+}
+
 .fav-wrap .fav-list>.active .text-box .fav-title p:first-child {
   display: block;
+}
 
+.fav-wrap .fav-list>.active .text-box .fav-title{
+  font-size: var(--title4);
+  font-weight: var(--bold);
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  transform:rotate(0deg);
 }
 
 .fav-wrap .fav-list>.active .text-box .fav-price {
   display: flex;
-  line-height: 48px;
+  line-height: var(--title2);
 }
 
 
-.fav-list .text-box {
+/* .fav-list .text-box {
   position: absolute;
-  bottom: 60px;
-  left: 50px;
+  bottom: 40px;
+  left: 40px;
   color: #fff;
-}
+} */
 
 .fav-list .text-box .fav-title {
-  font-size: 26px;
-  font-weight: 400;
+  position: absolute;
+  bottom: 52px;
+  color: #fff;
+
+  font-size: var(--title4);
+  font-weight: var(--bold);
   gap: 10px;
   display: flex;
   align-items: center;
-  margin-bottom: 14px;
+  transform: rotate(90deg);
 }
 
 .fav-list .text-box .fav-title .under {
@@ -390,110 +445,94 @@ section {
 }
 
 .fav-list .text-box .fav-price {
-  font-size: 46px;
-  font-weight: 800;
+  font-size: var(--title2);
+  font-weight: var(--bold);
   display: none;
 }
 
 .fav-list .text-box .fav-price p:first-child {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: var(--text1);
+  font-weight: var(--regular);
   vertical-align: top;
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 
-/* 수정 */
+/* section 3 _ notice-wrap */
 .notice-wrap {
   background-image: url(../images/background-section3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
+
+  /* min-height:calc(var(--vh)*100);
+  height:auto; */
+  /* overflow:visible; */
   /* padding: 160px 160px; */
 }
 
-.notice-wrap .notification-box {
-  width: 100%;
+.notification-box{
+  width:100%;
+  height:100%;
+  /* display:flex;
+  align-items: center;
+  justify-content: center; */
 }
 
-.notice-wrap .inner>div {
-  position: relative;
+.notification-box .inner{
+  /* max-height:clac(var(--vh)*100); */
+  /* height: 100%; */
 }
-
-.notice-title-wrap>.notice-title {
-  width: 30rem;
-  font-size: 40px;
-  font-weight: 700;
-  /* margin-top: 160px; */
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-.box-title,
-.event-title {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
+/* motice-title-wrap */
 .notice-title-wrap {
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  height: 50px;
-  margin-bottom: 40px;
-
 }
 
-.icon {
+.notice-title-wrap .section-title {
+  color: #fff;
+}
+
+.notice-title-wrap .icon {
   display: flex;
   gap: 8px;
 }
 
-.notice-wrap .contents,
-.notice-list {
-  display: flex;
-  justify-content: space-between;
+
+/* contents */
+.contents {
+  height:88%;
+  display: grid;
+  grid-template-columns: 30% repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
-.event-banner {
-  display: flex;
-  flex: 0 0 30%;
+.contents>div {
   border-radius: 24px;
-  /* width: 520px; */
-  /* height: 660px; */
-  flex-direction: column;
+}
+
+.box1 {
+  grid-row: 1/3;
   background: #fff;
+}
+
+.box1 .event-img {
+  border-radius: 24px 24px 0 0;
+  width: 100%;
+  height: 74%;
   overflow: hidden;
-  position: relative;
 }
 
-.event-img img {
-  display: flex;
-  width: 520px;
-  height: 430px;
+.box1 .event-img img {
+  width: inherit;
+  height: 100%;
+  object-fit: cover;
 }
 
-
-.evnet-contents-wrap {
+.box1 .evnet-contents-wrap {
   padding: 30px;
-}
-
-
-.event-right {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  flex: 0 0 68.5%;
-}
-
-
-.notice-list>div {
-  height: 320px;
-  border-radius: 24px;
-  padding: 36px;
 }
 
 .cate-title {
@@ -502,48 +541,70 @@ section {
   margin-bottom: 30px;
 }
 
-
-
-.notice-box1 {
-  flex: 1;
-  background: var(--bg-color);
-  position: relative;
+.box2 .cate-title,
+.box4 .cate-title {
+  color: var(--main-color-yellow);
 }
 
-.notice-box1>div,
-.youtube-box>div {
-  color: var(--sub-color);
+.box-title,
+.event-title {
+  font-size: var(--title6);
+  font-weight: var(--semi);
+  margin-bottom: 20px;
 }
-
-.notice-box1>p,
-.youtube-box>p {
-  color: #fff;
-
-}
-
-.notice-box2 {
-  flex: 1;
-  background: var(--sub-color);
-  position: relative;
-}
-
-
 
 .box-article {
-  font-size: 18px;
+  font-size: var(--text3);
   font-weight: var(--regular);
   line-height: 28px;
   margin-bottom: 20px;
 }
 
 .date {
-  gap: 14px;
-  bottom: 2rem;
   font-size: var(--text4);
   font-weight: var(--regular);
-  /* bottom: 30px; */
 }
 
+.box2 {
+  background: var(--bg-color);
+  padding: 36px;
+  color: #fff;
+}
+
+.box3 {
+  background: var(--sub-color);
+  padding: 36px;
+}
+
+.box4 {
+  display: flex;
+  grid-column: 2/4;
+  background: rgba(5, 54, 177, 0.5);
+  color: #fff;
+  overflow: hidden;
+}
+
+.box4 .youtube-box {
+  padding: 30px;
+}
+
+.box4 .youtube-play {
+  padding: 0;
+  overflow: hidden;
+  min-height: 315px;
+  height: 100%;
+  flex: 0 0 50%;
+}
+
+.box4.youtube-play iframe {
+  height: 100%;
+}
+
+
+
+.nbox:hover .notice-btn>a {
+  display: flex;
+}
 
 .notice-btn>a {
   display: none;
@@ -560,48 +621,23 @@ section {
   right: 50px;
 }
 
-.nbox:hover .notice-btn>a {
-  display: flex;
-
-}
-
-.youtube {
-  display: flex;
-  border-radius: 24px;
-  overflow: hidden;
-
-}
-
-.youtube-box {
-  /* width: 530px; */
-  height: 300px;
-  background: rgba(5, 54, 177, 0.5);
-  padding: 30px;
-  position: relative;
-  flex: 0 0 50%;
-
-}
-
-.youtube-play {
-  padding: 0;
-  overflow: hidden;
-  height: 100%;
-  flex: 0 0 50%;
-}
-
-.youtube-play iframe {
-  height: 100%;
-}
-
-
 /* section 4 - 다양한 혜택, 자주하는 질문*/
+.FAQ{
+  /* display:flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.FAQ .inner{
+  height:auto;
+}
 
 .benefit-wrap .section-title {
   font-size: 40px;
   color: #222222;
   padding-left: 0;
   left: 0;
-  margin:0;
+  margin: 0;
 }
 
 .benefit-wrap div {
@@ -642,7 +678,7 @@ section {
 
 .banner img {
   display: block;
-  width:100%;
+  width: 100%;
   /* width: 390px; */
   border-radius: 26px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -688,7 +724,7 @@ section {
 .faq-content-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom:36px;
+  margin-bottom: 36px;
 }
 
 .faq-wrap>.faq-top {
@@ -697,7 +733,7 @@ section {
 
 .faq-top>.section-title {
   font-size: 40px;
-  margin:0;
+  margin: 0;
 }
 
 .faq-top,
@@ -748,8 +784,8 @@ section {
   display: none;
   /* display: flex; */
 
-  gap: 30px;
-  margin:2px;
+  /* gap: 30px; */
+  /* margin: 2px; */
 }
 
 .faq-list.active {
@@ -773,7 +809,9 @@ section {
   max-width: calc((100% - 60px) / 4);
   display: block;
   height: 220px;
-  outline: 2px solid #d9d9d9;
+  /* outline: 2px solid #d9d9d9; */
+  border: 2px solid #d9d9d9;
+
   border-radius: 28px;
   padding: 24px 40px;
   /* box-sizing: border-box; */
@@ -781,7 +819,8 @@ section {
 
 
 .faq-item:hover {
-  outline: 2px solid var(--sub-color);
+  border: 2px solid var(--sub-color);
+  /* outline: 2px solid var(--sub-color); */
 }
 
 /* .faq-item>.faq-content {
@@ -795,6 +834,7 @@ section {
 .faq-content>.faq-items {
   display: block;
   padding: 10px;
+  font-size: var(--text3);
 }
 
 .faq-item .faq-Q {

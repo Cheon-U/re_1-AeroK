@@ -1,0 +1,131 @@
+:root {
+  --main-color-yellow: #FEC739;
+  --main-color-blue: #002554;
+  --primary-color: #002554;
+  --bg-color: #05183B;
+  --sub-color: #FFB81c;
+  --font-color-bk: #222222;
+  --font-color-gr: #6c737e;
+  --font-color-dark: #666666;
+  --title1: 48px;
+  --title2: 40px;
+  --title3: 30px;
+  --title4: 26px;
+  --title5: 24px;
+  --text1: 22px;
+  --text2: 20px;
+  --text3: 18px;
+  --text4: 16px;
+  --bold: 700;
+  --semi: 600;
+  --medium: 500;
+  --regular: 400;
+}
+
+.section-title{
+    font-size:26px;
+    font-weight:600;
+}
+
+button{
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+
+.passenger{
+    width:600px;
+    height:782px;
+    padding:48px 40px;
+    border:1px solid black;
+}
+
+/* top-line */
+
+.section-top{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+}
+
+.adult-wrap, .child-wrap, .baby-wrap{
+    width:520px;
+    padding:28px 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.content .left .tag-top{
+    font-size:22px;
+}
+
+.content .left .tag-bottom{
+    font-size:16px;
+}
+
+.content .right{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+
+.content .right .count{
+    font-size:30px;
+    font-weight: 800;
+}
+
+/* bottom-line */
+/* .bottom-line{
+    text-align: center;
+} */
+.check{
+    display:flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.check button{
+    display:block;
+    width:180px;
+    height:60px;
+    background: #002554;
+    font-size: 20px;
+    font-weight: 600;
+    color:#fff;
+}
+
+.calc{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:30px 0;
+}
+
+.calc button{
+    font-size: 18px;    
+}
+
+.warning{
+    width:520px;
+    background: #EDEDED;
+    font-size:16px;
+    padding:0 20px;
+}
+
+.warning  ul{
+    padding: 10px 0;
+}
+
+.warning li {
+    list-style: inside;
+    padding:10px 0  10px 0;
+}
+

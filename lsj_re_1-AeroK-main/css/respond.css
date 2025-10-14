@@ -1,0 +1,495 @@
+/* 1700px */
+@media screen and (max-width:1700px) {
+  .header-wrap {
+    padding: 0 2rem;
+  }
+
+  .inner {
+    padding: 0 3rem;
+  }
+
+  .slider-pager {
+    padding: 0 3rem;
+  }
+
+
+  .ticket-content-wrap {
+    font-size: 1.8rem;
+  }
+
+  .ticket-content-wrap .button {
+    font-size: 1.8rem;
+  }
+
+  .fav-wrap {
+    height: auto;
+  }
+}
+
+/* 1425px */
+@media screen and (max-width:1430px) {
+
+  .ticket-content-wrap img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ticket-wrap button {
+    font-size: 1.7rem;
+  }
+
+}
+
+/* 1355px */
+@media screen and (max-width:1355px) {
+
+  .ticket-content-wrap img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .ticket-wrap button {
+    font-size: 1.6rem;
+  }
+
+}
+
+/* 1300px */
+@media screen and (max-width:1300px) {
+  .header-wrap {
+    padding: 0 2rem;
+  }
+
+  .main-menu {
+    gap: 60px;
+  }
+
+  .inner {
+    margin: 7vh 0;
+    padding: 0 3rem;
+  }
+
+  .slider-pager {
+    left: 3rem;
+    top: 13rem;
+  }
+
+  .tab-menu-list>li {
+    width: 16rem;
+  }
+
+  .ticket-menu-wrap {
+    margin-top: 6rem;
+  }
+
+  /* .ticket-content-wrap {
+    height: 8rem;
+  } */
+
+  .ticket-search {
+    padding: 2rem 1.5rem;
+    width: 0;
+  }
+
+  .itinerary>img,
+  .celender>img {
+    margin-top: 4.4rem;
+  }
+
+  .ticket-menu-wrap>.button {
+    font-size: 1.6rem;
+  }
+
+  /* .date>button,
+  .itinerary>.button,
+  .person>button {
+    font-size: 18px;
+  } */
+
+  .date>img {
+    display: none;
+  }
+
+  .person>img {
+    display: none;
+  }
+
+  /* section title */
+  .fav-wrap h2 {
+    font-size: 38px;
+  }
+
+  .notice-title {
+    font-size: 38px;
+  }
+
+  /* section2 */
+  .fav-title-wrap {
+    margin-bottom: 40px;
+  }
+
+  .fav-list .text-box .fav-title {
+    font-size: 20px;
+  }
+
+  .fav-wrap .fav-list>div {
+    width: 12rem;
+  }
+
+  .fav-list .text-box .fav-price {
+    font-size: 42px;
+  }
+
+  .fav-title {
+    display: block;
+  }
+
+  .fav-list .text-box .fav-price p:first-child {
+    font-size: 20px;
+    display: flex;
+  }
+
+  .fav-list .text-box {
+    left: 30px;
+  }
+
+  /* section3 */
+  .box-title,
+  .event-title {
+    font-size: 26px;
+  }
+
+  .box-article {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .cate-title {
+    margin-bottom: 20px;
+  }
+
+  /* section 4 */
+  .banner img {
+    width: 21rem;
+  }
+
+
+  /* FAQ */
+  .benefit-wrap>div>.section-title {
+    font-size: 36px;
+  }
+
+  .faq-tab>.tab {
+    font-size: 18px;
+  }
+
+  .faq-top>.section-title {
+    font-size: 36px;
+  }
+
+  .faq-list>.faq-item {
+    width: 16.8rem;
+    height: 11rem;
+    padding: 16px 20px;
+
+  }
+
+  .faq-wrap {
+    margin-top: 5rem;
+  }
+
+  /* .footer-wrap {
+    padding: 2rem 3rem;
+  } */
+}
+
+/* 1280px */
+@media screen and (max-width:1280px) {
+  .header-wrap {
+    padding: 0 3rem;
+  }
+
+  .main-menu {
+    gap: 60px;
+  }
+
+  .inner {
+    padding: 3rem;
+  }
+
+  .slider-pager {
+    left: 3rem;
+    top: 13rem;
+  }
+
+  .tab-menu-list>li {
+    width: 9rem;
+  }
+
+
+  .ticket-content-wrap {
+    height: 8rem;
+  }
+
+  .ticket-search {
+    padding: 2rem 1.5rem;
+
+  }
+
+  section {
+    height: auto;
+  }
+
+  .itinerary>img,
+  .celender>img {
+    margin-top: 4.4rem;
+  }
+
+  .ticket-menu-wrap>button {
+    font-size: 18px;
+  }
+
+  .date>button,
+  .itinerary>.button,
+  .person>button {
+    font-size: 18px;
+  }
+
+  .date>img {
+    display: none;
+  }
+
+  .person>img {
+    display: none;
+  }
+
+  /* section title */
+  .fav-wrap h2 {
+    font-size: 38px;
+  }
+
+  .notice-title {
+    font-size: 38px;
+  }
+
+  /* section2 */
+  .fav-title-wrap {
+    margin-bottom: 40px;
+  }
+
+  .fav-list .text-box .fav-title {
+    font-size: 20px;
+  }
+
+  .fav-wrap .fav-list>div {
+    width: 12rem;
+  }
+
+  .fav-list .text-box .fav-price {
+    font-size: 42px;
+  }
+
+  .fav-title {
+    display: block;
+  }
+
+  .fav-list .text-box .fav-price p:first-child {
+    font-size: 20px;
+    display: flex;
+  }
+
+  .fav-list .text-box {
+    left: 30px;
+  }
+
+  /* section3 - 에어로케이의 새로운 소식*/
+  .box-title,
+  .event-title {
+    font-size: 26px;
+  }
+
+  .box-article {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .cate-title {
+    margin-bottom: 20px;
+  }
+
+  .notice-box1,
+  .notice-box2,
+  .event-banner {
+    margin-bottom: 1.4rem;
+  }
+
+  .event-img img {
+    width: 100%;
+    height: 14rem;
+  }
+
+  .event-right {
+    gap: 0;
+  }
+
+  .youtube {
+
+    display: block;
+  }
+
+  /* section 4 */
+  .banner img {
+    width: 21rem;
+  }
+
+
+  /* FAQ */
+  .benefit-wrap>div>.section-title {
+    font-size: 36px;
+  }
+
+  .faq-tab>.tab {
+    font-size: 18px;
+  }
+
+  .faq-top>.section-title {
+    font-size: 36px;
+  }
+
+  .faq-list>.faq-item {
+    width: 16.8rem;
+    height: 11rem;
+    padding: 16px 20px;
+
+  }
+
+  .faq-wrap {
+    margin-top: 5rem;
+  }
+
+  .footer-wrap {
+    padding: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width:1128px) {
+  .faq-list>.faq-item {
+    width: 14.7rem;
+    height: 11rem;
+    padding: 16px 20px;
+  }
+}
+
+/* 1080px */
+@media screen and (max-width:1080px) {
+  .ticket-content-wrap {
+    display: block;
+    height: 31rem;
+  }
+
+  .ticket-menu-wrap {
+    margin-top: 2rem;
+  }
+
+  .ticket-search img {
+    display: block;
+  }
+
+  .notice-wrap .contents,
+  .notice-list {
+    display: block;
+  }
+
+  .tab-menu-list {
+    width: 100%;
+  }
+
+  .tab-menu-list>li {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  /* 숨기기 */
+  .nav,
+  .gnb>button,
+  .login,
+  .lang {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  /* 보이기 */
+  .ham-btn {
+    display: block;
+    top: 0;
+    right: 30px;
+    position: absolute;
+    /* background: pink; */
+  }
+
+  .notice-wrap .contents,
+  .notice-list {
+    display: block;
+  }
+
+  .ticket-wrap .inner {
+    top: 2vh;
+  }
+
+  .ticket-content-wrap {
+    display: block;
+    height: 24rem;
+  }
+
+  .ticket-menu-wrap {
+    margin-top: 2rem;
+  }
+
+  /* 모바일 서브메뉴 */
+
+  .header-wrap {
+    position: fixed;
+    display: block;
+    width: 70%;
+    height: 100%;
+    background: #040422;
+    top: 0;
+    left: 0;
+    padding: 0;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .main-menu {
+    display: inherit;
+    /* background: #040422; */
+
+  }
+
+  .m1 {
+    border-bottom: 1px solid #38395c;
+    padding: 30px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 18px;
+  }
+
+  .close-btn {
+    position: absolute;
+    width: 32px;
+    top: 10px;
+    right: -45px;
+  }
+
+
+
+}
+
+@media screen and (max-width:640px) {}

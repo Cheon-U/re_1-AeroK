@@ -1,0 +1,251 @@
+:root {
+  --main-color-yellow: #FEC739;
+  --main-color-blue: #002554;
+  --primary-color: #002554;
+  --bg-color: #05183B;
+  --sub-color: #FFB81c;
+  --font-color-bk: #222222;
+  --font-color-gr: #6c737e;
+  --font-color-dark: #666666;
+  --title1: 48px;
+  --title2: 40px;
+  --title3: 30px;
+  --title4: 26px;
+  --title5: 24px;
+  --text1: 22px;
+  --text2: 20px;
+  --text3: 18px;
+  --text4: 16px;
+  --bold: 700;
+  --semi: 600;
+  --medium: 500;
+  --regular: 400;
+}
+
+.content-inner {
+  /* margin: auto; */
+  margin: 120px auto;
+  max-width: 1400px;
+  /* 수정 */
+  width: 100%;
+  height:100%;
+  /* background-color: rgba(0, 255, 0, 0.2); */
+}
+
+.section-title {
+  font-size: var(--title2);
+  font-weight: 700;
+  color: #222222;
+  padding-left: 0;
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+button{
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+.menu{
+    display:flex;
+    gap:8px;
+
+    font-size:16px;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-bottom:30px;
+}
+
+.menu .this{
+    color: #002554;
+    font-weight: 600;
+
+}
+
+        /* search-tap */
+.search-tap{
+    display:flex;
+    height:60px;
+    background-color: #FEC739;
+
+    font-size:24px;
+    color:#222222;
+    font-weight: 600;
+
+    margin-bottom: 40px;
+}
+
+.tab-trip-type{
+    width:210px;
+    display:flex;
+    justify-content: center;
+    background: #002554;
+}
+
+
+.tab-trip-type>a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+    color:#fff;
+    font-size:20px;
+}
+
+.location{
+    width:750px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.location p a:first-child{
+    margin-right:120px;
+}
+
+.location p a:first-child{
+    margin-left:120px;
+}
+
+
+.date{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:440px;
+}
+
+
+.date>p>a>img{
+    margin-right:12px;
+}
+
+.date>p>img{
+    margin:0 26px;
+}
+
+        /* contents-wrap */
+.contents-wrap{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+}
+    /* nv-btn */
+.nv-btn{
+    width:978px;
+
+    display:flex;
+    justify-content: space-between;
+    
+    font-size:16px;
+
+    margin-bottom: 8px;
+}
+
+.prev-btn a, .next-btn a{
+    display:flex;
+    align-items: center;
+}
+     /* schedule-wrap */
+
+.schedule-wrap{    
+    display:flex;
+    justify-content: space-between;
+    
+    font-size:22px;
+    font-weight: 500;
+
+    margin-bottom: 24px;
+}
+
+.schedule{
+    width:163px;
+    text-align: center;
+}
+
+.schedule + .schedule{ 
+    border-left: 1px solid #d9d9d9;
+ }
+
+     /* data */
+.data{
+    width:100%;
+    height:172px;
+
+    display: flex;
+    align-items: center;
+
+    border:1px solid #d9d9d9;
+
+    margin-bottom: 24px;
+
+}
+
+.data>div{
+    height:inherit;
+}
+
+.data-date{
+    display:flex;
+    align-items: center;
+    
+    font-size:24px;
+    font-weight: 600;
+
+    width:422px;
+    /* padding-right:32px; */
+}
+
+.data-date::before{
+    content: "";
+    display:block;
+
+    width:8px;
+    height:106px;
+    background-color: #FEC739;
+
+    margin-right:46px;
+}
+
+.data-date p>span  {
+    font-size:16px;
+    font-weight: 400;
+}
+
+.data-date p>img{
+    padding:0 28px;
+}
+
+    /* run */
+.run{
+    width:163px;
+    border-left:1px solid #d9d9d9;
+
+}
+
+.data .active{
+    background: url(../images/airplane-b.svg) no-repeat center center;
+}
+
+
+        /* search-button */
+
+.search button{
+    display:block;
+    
+    width:490px;
+    height:72px;
+    background-color: #FEC739;
+
+    font-size:24px;
+    font-weight:600;
+}
+

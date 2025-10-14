@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="images/png" href="./images/favicon.ico">
     <link rel="stylesheet" href="./css/respond.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script defer src="./js/text.js"></script>
+    <script defer src="./js/header-footer.js"></script>
 </head>
 
 </head>
@@ -21,7 +23,7 @@
 <body>
     <header>
         <div class="header-wrap">
-            <h1 class="logo"><a href="#"><img src="./images/Aerok-logo.svg" alt="에어로케이 로고"></a></h1>
+            <h1 class="logo"><a href="./index.html"><img src="./images/Aerok-logo.svg" alt="에어로케이 로고"></a></h1>
             <div class="nav">
                 <ul class="main-menu">
                     <li class="m1"><a href="#">예약</a>
@@ -30,7 +32,7 @@
                                 <div>
                                     <h2>예약 및 조회</h2>
                                     <ul class="depth2">
-                                        <li><a href="#">항공권 예약</a></li>
+                                        <li><a href="./lsj_re_1-AeroK-main/sub_01_01_01.html">항공권 예약</a></li>
                                         <li><a href="#">예약 조회</a></li>
                                         <li><a href="#">예약 가이드</a></li>
                                         <li><a href="#">단체 항공권 예약 안내</a></li>
@@ -40,7 +42,7 @@
                                     <h2>정보</h2>
                                     <ul class="depth2">
                                         <li><a href="#">운임안내</a></li>
-                                        <li><a href="#">운항 노선 및 스케줄 안내</a></li>
+                                        <li><a href="./lsj_re_1-AeroK-main/sub-01-02-02.html">운항 노선 및 스케줄 안내</a></li>
                                         <li><a href="#">출도착 스케줄 안내</a></li>
                                     </ul>
                                 </div>
@@ -160,8 +162,153 @@
                     </div>
                 </div>
             </div>
+            <div class="m-ham"><a href=""><img src="./images/ham.svg" alt=""></a></div>
         </div>
     </header>
+
+    <nav class="nav-m">
+        <div class="m-gnb-wrap">
+            <div class="m-lang">
+                <img src="./images/earth-Icon.svg" alt="아이콘">
+                <span class="lang-select">한국어</span>
+                <img src="./images/dropdown.svg" alt="화살표버튼">
+
+                <ul class="lang-sub">
+                    <li><a href="#">한국어</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">中文</a></li>
+                    <li><a href="#">日本語</a></li>
+                </ul>
+            </div>
+            <div class="nav-m-top-right">
+                <button class="m-search">
+                    <img src="./images/icon-search.svg" alt="검색아이콘">
+                </button>
+                <div class="m-login"><a href="#">로그인</a><a href="#">회원가입</a></div>
+                <div class="m-close-btn">
+                    <img src="./images/close-btn.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="m-gnb-panel">
+            <div class="m-lang-panel">
+                <ul class="panel-lang-sub">
+                    <li class="active"><a href="#">
+                            <p>한국어</p><img src="./images/check.svg" alt="">
+                        </a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">中文</a></li>
+                    <li><a href="#">日本語</a></li>
+                </ul>
+            </div>
+            <div class="m-search-panel">
+                <p><input type="text" placeholder="검색어를 입력하세요."> <button><img src="./images/icon-search.svg"
+                            alt=""></button></p>
+            </div>
+            <div class="m-login-panel">
+                <div class="id-box">
+                    <p>아이디</p>
+                    <input type="text" placeholder="아이디 입력">
+                </div>
+                <div class="pw-box">
+                    <p>비밀번호</p>
+                    <input type="password" placeholder="비밀번호 입력">
+                </div>
+                <button class="login">로그인</button>
+            </div>
+        </div>
+        <hr>
+        <div class="nav-m-wrap">
+            <div class="m-main-menu">
+                <ul>
+                    <li class="m1 active"><a href="#">예약</a></li>
+                    <li class="m2"><a href="#">체크인</a></li>
+                    <li class="m3"><a href="#">서비스 안내</a></li>
+                    <li class="m4"><a href="#">이벤트</a></li>
+                </ul>
+            </div>
+            <div class="m-sub-menu">
+                <div class="m1-item active">
+                    <h2>예약 및 조회</h2>
+                    <ul>
+                        <li><a href="#">항공권 예약</a></li>
+                        <li><a href="#">예약 조회</a></li>
+                        <li><a href="#">예약 가이드</a></li>
+                        <li><a href="#">단체 항공권 예약 안내</a></li>
+                    </ul>
+                    <h2>정보</h2>
+                    <ul>
+                        <li><a href="#">운임안내</a></li>
+                        <li><a href="#">운항 노선 및 스케줄 안내</a></li>
+                        <li><a href="#">출도착 스케줄 안내</a></li>
+                    </ul>
+                    <h2>부가서비스 신청</h2>
+                    <ul>
+                        <li><a href="#">기내 좌석 배정</a></li>
+                        <li><a href="#">기내식 사전 주문</a></li>
+                        <li><a href="#">초과 수화물 사전 구매</a></li>
+                        <li><a href="#">반려동물 동반 신청</a></li>
+                    </ul>
+                </div>
+                <div class="m2-item ">
+                    <h2>체크인</h2>
+                    <ul>
+                        <li><a href="#">사전 체크인</a></li>
+                        <li><a href="#">공항 체크인</a></li>
+                    </ul>
+                    <h2>공항정보</h2>
+                    <ul>
+                        <li><a href="#">공항정보</a></li>
+                        <li><a href="#">출입국 규정 정보</a></li>
+                        <li><a href="#">탑승 수속 안내</a></li>
+                    </ul>
+                    <h2>항공기 정보</h2>
+                    <ul>
+                        <li><a href="#">항공기 정보</a></li>
+                    </ul>
+                </div>
+                <div class="m3-item">
+                    <h2>수화물</h2>
+                    <ul>
+                        <li><a href="#">기내 휴대 수화물</a></li>
+                        <li><a href="#">위탁 수화물</a></li>
+                        <li><a href="#">특수 수화물</a></li>
+                        <li><a href="#">운송 제한 물품</a></li>
+                        <li><a href="#">수화물 배상</a></li>
+                    </ul>
+                    <h2>도움이 필요한 고객</h2>
+                    <ul>
+                        <li><a href="#">임산부 승객</a></li>
+                        <li><a href="#">유아 동반 여행</a></li>
+                        <li><a href="#">몸이 불편한 승객</a></li>
+                        <li><a href="#">혼자 여행하는 어린이</a></li>
+                    </ul>
+                    <h2>제휴서비스</h2>
+                    <ul>
+                        <li><a href="#">여행상품</a></li>
+                        <li><a href="#">호텔/숙박</a></li>
+                        <li><a href="#">렌터카</a></li>
+                        <li><a href="#">액티비티</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                    <h2>기내서비스</h2>
+                    <ul>
+                        <li><a href="#">Onboard Shop</a></li>
+                        <li><a href="#">기내 면세 판매</a></li>
+                        <li><a href="#">브랜드샵</a></li>
+                    </ul>
+                </div>
+                <div class="m4-item">
+                    <h2>이벤트</h2>
+                    <ul>
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">지난 이벤트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
 
 
     <main>
@@ -211,23 +358,23 @@
                 <div class="ticket-menu-wrap">
                     <ul class="tab-menu-list">
                         <li class="active"><a href="#">항공권예매</a></li>
-                        <li><a href="#">예약</a></li>
+                        <li><a href="#">예약조회</a></li>
                         <li><a href="#">체크인</a></li>
                     </ul>
                     <div class="ticket-content-wrap active">
-                        <div class="ticket-list">
+                        <div class="ticket1">
                             <div class="itinerary">
                                 <div class="ticket-search">
                                     <span>출발지</span>
                                     <div class="date">
-                                        <button type="button" class="active">서울</button>
+                                        <button type="button" class="active">출발</button>
                                     </div>
                                 </div>
                                 <img src="./images/lyra-icon-ArrowsLeftRight.svg" alt="버튼이미지">
                                 <div class="ticket-search">
                                     <span>도착지</span>
                                     <div class="date">
-                                        <button type="button" class="active">후쿠오카</button>
+                                        <button type="button" class="active">도착</button>
                                     </div>
                                 </div>
                             </div>
@@ -268,7 +415,7 @@
                         <button>항공권 검색</button>
                     </div>
                     <div class="ticket-content-wrap">
-                        <div class="ticket-list">
+                        <div class="ticket2">
                             <div class="flight-search">
                                 <div class="ticket-search">
                                     <span>예약번호 또는 항공권번호</span>
@@ -285,20 +432,21 @@
 
                                 </div>
                             </div>
-                            <div class="last-name">
-                                <div class="ticket-search">
-                                    <span>성</span>
-                                    <div class="person">
-                                        <button type="button">Last name</button>
+                            <div class="passenger">
+                                <div class="last-name">
+                                    <div class="ticket-search">
+                                        <span>성</span>
+                                        <div class="person">
+                                            <button type="button">Last name</button>
+                                        </div>
                                     </div>
                                 </div>
-
-                            </div>
-                            <div class="first-name">
-                                <div class="ticket-search">
-                                    <span>이름</span>
-                                    <div class="person">
-                                        <button type="button">first name</button>
+                                <div class="first-name">
+                                    <div class="ticket-search">
+                                        <span>이름</span>
+                                        <div class="person">
+                                            <button type="button">first name</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -306,7 +454,7 @@
                         <button>조회</button>
                     </div>
                     <div class="ticket-content-wrap">
-                        <div class="ticket-list">
+                        <div class="ticket3">
                             <div class="flight-search">
                                 <div class="ticket-search">
                                     <span>예약번호 또는 항공권번호</span>
@@ -320,23 +468,24 @@
                                         <img src="./images/lyra-icon-CalendarBlank.svg" alt="달력아이콘">
                                         <button type="button" class="active">25 / 09 / 26</button>
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="last-name">
-                                <div class="ticket-search">
-                                    <span>성</span>
-                                    <div class="person">
-                                        <button type="button">Last name</button>
+                            <div class="passenger">
+                                <div class="last-name">
+                                    <div class="ticket-search">
+                                        <span>성</span>
+                                        <div class="person">
+                                            <button type="button">Last name</button>
+                                        </div>
                                     </div>
-                                </div>
 
-                            </div>
-                            <div class="first-name">
-                                <div class="ticket-search">
-                                    <span>이름</span>
-                                    <div class="person">
-                                        <button type="button">first name</button>
+                                </div>
+                                <div class="first-name">
+                                    <div class="ticket-search">
+                                        <span>이름</span>
+                                        <div class="person">
+                                            <button type="button">first name</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -344,7 +493,6 @@
                         <button>조회</button>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 
@@ -364,11 +512,9 @@
                                     <p class="under"></p>
                                     <p>타이페이</p>
                                 </div>
-                                <div class="fav-price-wrap">
-                                    <div class="fav-price">
-                                        <p>KRW</p>
-                                        <p>77,400 ~</p>
-                                    </div>
+                                <div class="fav-price">
+                                    <p>KRW</p>
+                                    <p>77,400 ~</p>
                                 </div>
                             </div>
                         </a></div>
@@ -427,15 +573,10 @@
 
         <section class="notice-wrap">
             <div class="notification-box">
-
-                <!-- lsj -->
-                <!-- <section class="notification">
-      <div class="notice-wrap"> -->
-
                 <!-- 수정 inner 추가 -->
                 <div class="inner">
                     <div class="notice-title-wrap">
-                        <h2 class="notice-title">에어로케이의 새로운 소식</h2>
+                        <h2 class="section-title">에어로케이의 새로운 소식</h2>
                         <ul class="icon">
                             <li><a href="#void"><img src="./images/SNS-Icons-yt.png" alt="유튜브"></a></li>
                             <li><a href="#void"><img src="./images/SNS-Icons-Insta.png" alt="인스타그램"></a></li>
@@ -443,53 +584,52 @@
                         </ul>
                     </div>
                     <div class="contents">
-                        <div class="event-banner">
+                        <div class="box1 event-banner">
                             <div class="event-img"><img src="./images/event-1.png" alt=""></div>
                             <div class="evnet-contents-wrap">
                                 <p class="event-title">청주-오비히로 단독 운항 기념 항공권 이벤트</p>
                                 <p class="date">2025.08.01~2025.09.14</p>
                             </div>
                         </div>
-                        <div class="event-right">
-                            <div class="notice-list">
-                                <div class="notice-box1 nbox">
-                                    <div class="cate-title"><a href="#void">공지사항</a></div>
-                                    <p class="box-title">다자녀 가구 우선 출국(출발)서비스안내</p>
-                                    <p class="box-article">2025년 6월 10일부터 3자녀 이상 다자녀 가구를 대상으로 우선출국 서비스가 시행됩니다.</p>
-                                    <p class="date">2025.05.26</p>
-                                    <p class="notice-btn active"><a href="#void">View more</a></p>
-                                </div>
-                                <div class="notice-box2 nbox">
-                                    <div class="cate-title"><a href="#void">안내사항</a></div>
-                                    <!-- ji -->
-                                    <!-- <p class="box-title">국제선 항공기 지연 안내(25.08.13~25.08.14 / RF531, RF532)</p> -->
-                                    <p class="box-title">국제선 항공기 지연 안내(25.08.13~25.08.14 / RF531..</p>
-                                    <p class="box-article">안녕하세요. 새로운 여정의 시작, 에어로케이항공입니다. 현지 공항 혼잡으로 인하여 항공기가 지연되어...
-                                    </p>
-                                    <p class="date">2025.05.26</p>
-                                    <p class="notice-btn"><a href="#void">View more</a></p>
-                                </div>
+
+                        <div class="box2 notice-box1 nbox">
+                            <div class="cate-title"><a href="#void">공지사항</a></div>
+                            <p class="box-title">다자녀 가구 우선 출국(출발)서비스안내</p>
+                            <p class="box-article">2025년 6월 10일부터 3자녀 이상 다자녀 가구를 대상으로 우선출국 서비스가 시행됩니다.</p>
+                            <p class="date">2025.05.26</p>
+                            <p class="notice-btn active"><a href="#void">View more</a></p>
+                        </div>
+
+                        <div class="box3 notice-box2 nbox">
+                            <div class="cate-title"><a href="#void">안내사항</a></div>
+                            <!-- ji -->
+                            <!-- <p class="box-title">국제선 항공기 지연 안내(25.08.13~25.08.14 / RF531, RF532)</p> -->
+                            <p class="box-title">국제선 항공기 지연 안내(25.08.13~25.08.14 / RF531..</p>
+                            <p class="box-article">안녕하세요. 새로운 여정의 시작, 에어로케이항공입니다. 현지 공항 혼잡으로 인하여 항공기가 지연되어...
+                            </p>
+                            <p class="date">2025.05.26</p>
+                            <p class="notice-btn"><a href="#void">View more</a></p>
+                        </div>
+
+                        <div class="box4 youtube">
+                            <div class="youtube-play">
+                                <iframe width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/oCaIK8m1KsU?si=fkRbTBvs1JRhrNvl&amp;start=2"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
-                            <div class="youtube">
-                                <div class="youtube-play"><iframe width="560" height="315"
-                                        src="https://www.youtube.com/embed/E49bris6WFk?si=2k6p1MaLvW0rOcxZ"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                                </div>
-                                <div class="youtube-box">
-                                    <div class="cate-title"><a href="#void">Youtube</a></div>
-                                    <p class="box-title">에어로케이 x 롱블랙 특별 전세기</p>
-                                    <p class="box-article">에어로케이와 지식 구독 서비스 롱블랙이 도쿄행 특별 전세기를 준비하여 4인의 기획자를 만나고 왔습니다.</p>
-                                    <p class="date">#에어로케이 #롱블랙</p>
-                                </div>
-
+                            <div class="youtube-box">
+                                <div class="cate-title"><a href="#void">Youtube</a></div>
+                                <p class="box-title">에어로케이 x 롱블랙 특별 전세기</p>
+                                <p class="box-article">에어로케이와 지식 구독 서비스 롱블랙이 도쿄행 특별 전세기를 준비하여 4인의 기획자를 만나고 왔습니다.</p>
+                                <p class="date">#에어로케이 #롱블랙</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
+
+            </div>
             </div>
         </section>
 
@@ -886,68 +1026,82 @@
 
     <footer>
         <div class="footer-wrap">
-            <div class="top-btn"><a href="#"><img src="./images/top-icon.svg" alt="top버튼"></a></div>
-            <div class="footer-top">
-                <div class="footer-top-left">
-                    <ul class="footer-menu">
-                        <li>
-                            <p>에어로케이</p>
-                            <ul class="sub-footer-menu">
-                                <li><a href="#">회사소개</a></li>
-                                <li><a href="#">채용안내</a></li>
-                                <li><a href="#">브랜드스토리</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p>약관 및 규정</p>
-                            <ul class="sub-footer-menu">
-                                <li><a href="#">개인정보처리방침</a></li>
-                                <li><a href="#">이용약관</a></li>
-                                <li><a href="#">여객 운송 약관</a></li>
-                                <li><a href="#">서식자료실</a></li>
-                                <li><a href="#">유실물센터</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p>고객센터</p>
-                            <ul class="sub-footer-menu">
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p>기타안내</p>
-                            <ul class="sub-footer-menu">
-                                <li><a href="#">항공 교통 이용자 서비스 계획</a></li>
-                                <li><a href="#">피해 구제 계획</a></li>
-                                <li><a href="#">항공안전투자공시</a></li>
-                                <li><a href="#">사이트맵</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+            <div class="inner">
+                <div class="top-btn"><a href="#"><img src="./images/top-icon.svg" alt="top버튼"></a></div>
+                <div class="footer-top">
+                    <div class="footer-top-left">
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#">
+                                    <p>에어로케이<span class="m-footer-menu-btn"><img src="./images/icon-arrow_down_W.svg"
+                                                alt=""></span></p>
+                                </a>
+                                <ul class="sub-footer-menu">
+                                    <li><a href="#">회사소개</a></li>
+                                    <li><a href="#">채용안내</a></li>
+                                    <li><a href="#">브랜드스토리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>약관 및 규정<span class="m-footer-menu-btn"><img src="./images/icon-arrow_down_W.svg"
+                                                alt=""></span></p>
+                                </a>
+                                <ul class="sub-footer-menu">
+                                    <li><a href="#">개인정보처리방침</a></li>
+                                    <li><a href="#">이용약관</a></li>
+                                    <li><a href="#">여객 운송 약관</a></li>
+                                    <li><a href="#">서식자료실</a></li>
+                                    <li><a href="#">유실물센터</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>고객지원<span class="m-footer-menu-btn"><img src="./images/icon-arrow_down_W.svg"
+                                                alt=""></span></p>
+                                </a>
+                                <ul class="sub-footer-menu">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>기타안내<span class="m-footer-menu-btn"><img src="./images/icon-arrow_down_W.svg"
+                                                alt=""></span></p>
+                                </a>
+                                <ul class="sub-footer-menu"></a>
+                                    <li><a href="#">항공 교통 이용자 서비스 계획</a></li>
+                                    <li><a href="#">피해 구제 계획</a></li>
+                                    <li><a href="#">항공안전투자공시</a></li>
+                                    <li><a href="#">사이트맵</a></li>
+                                </ul>
+                            </li>
+                        </ul>
 
-                </div>
-                <div class="footer-top-right">
-                    <div class="custom-center">
-                        <p>고객센터</p>
-                        <p class="number"><a href="#">1899-2299</a></p>
-                        <p class="time"><span>영업시간</span><span>09:00~18:00</span></p>
-                        <p>+82-1899-2299 <span class="call">해외에서 연락시</span></p>
-                        <button>고객 문의</button>
+                    </div>
+                    <div class="footer-top-right">
+                        <div class="custom-center">
+                            <p>고객센터</p>
+                            <p class="number"><a href="#">1899-2299</a></p>
+                            <p class="time"><span>영업시간</span><span>09:00~18:00</span></p>
+                            <p>+82-1899-2299 <span class="call">해외에서 연락시</span></p>
+                            <button>고객 문의</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <hr>
-            <div class="footer-bottom">
-                <div class="footer-bottom-left">
-                    <p><span>에어로케이항공㈜ Aero K Airlines Co. Ltd. </span><span>대표이사 : 강병호</span><span>사업자 등록번호 :
-                            274-88-00540
-                        </span><span>통신판매업신고번호 : 2020-충북청주-0518</span></p>
-                    <p><span>주소 : 충청북도 청주시 흥덕구 오송읍 오송생명3로 15</span><span>개인정보 보호 책임자: 이성은</span></p>
-                    <p class="copy">© 2021 Aero K Airlines Co. Ltd. All rights reserved. </p>
-                </div>
-                <div class="footer-logo">
-                    <img src="./images/footer-logo.svg" alt="푸터로고">
+                <hr>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                        <p><span>에어로케이항공㈜ Aero K Airlines Co. Ltd. </span><span>대표이사 : 강병호</span><span>사업자 등록번호 :
+                                274-88-00540
+                            </span><span>통신판매업신고번호 : 2020-충북청주-0518</span></p>
+                        <p><span>주소 : 충청북도 청주시 흥덕구 오송읍 오송생명3로 15</span><span>개인정보 보호 책임자: 이성은</span></p>
+                        <p class="copy">© 2021 Aero K Airlines Co. Ltd. All rights reserved. </p>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="./images/footer-logo.svg" alt="푸터로고">
+                    </div>
                 </div>
             </div>
         </div>
@@ -958,12 +1112,14 @@
 
     <script>
         let favList = document.querySelectorAll(".fav");
+        let favText = document.querySelectorAll(".fav .text-box .fav-title:not(:last-child)");
+
         favList.forEach(fav => {
             fav.addEventListener("mouseenter", function () {
                 favList.forEach((el) => el.classList.remove("active"))
                 this.classList.add("active");
-            })
-        })
+            });
+        });
     </script>
 </body>
 
