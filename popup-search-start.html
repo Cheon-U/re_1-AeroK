@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/popup-search-start.css">
 </head>
 
@@ -18,28 +18,44 @@
                 <input id="search-city" type="text" name="city" value="" placeholder="도시명, 공항명을 입력해주세요"><img
                     src="./images/icon-search.svg" alt="">
             </div>
-            <div class="favorite-box">
-                <ul class="favorite-list">
-                    <li>즐겨찾기</li>
+            <div class="go-trip-box">
+                <ul class="nation-list">
+                    <li><a href="#void">즐겨찾기</a></li>
                     <li class="nation active"><a href="#void">대한민국<img src="./images/icon-checked.png" alt=""></a>
-                        <ul class="korea-city">
-                            <li class="active"><a href="#void">청주<p>CJJ</p></a>
-                                <a href="#void"><img src="./images/icon_bookmark.png" alt="즐겨찾기"></a>
-                            </li>
-                            <li><a href="#void">제주<p>CJU</p>
-                                <a href="#void"><img src="./images/icon_bookmark.png" alt="즐겨찾기"></a>
-                            </li>
-                            <li>
-                                <a href="#void">서울/인천<p>ICN</p></a>
-                                <a href="#void"><img src="./images/icon_bookmark.png" alt="즐겨찾기"></a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="nation"><a href="#void">일본</a></li>
                     <li class="nation"><a href="#void">동북아시아</a></li>
                     <li class="nation"><a href="#void">동남아시아</a></li>
                     <li class="nation"><a href="#void">몽골</a></li>
                 </ul>
+                <div class="city-list">
+                    <ul class="city-name korea-city">
+                        <li class="active">
+                            <div class="city-item">
+                                <a href="#void" class="city-text">
+                                    <p>청주</p><span>CJJ</span>
+                                </a>
+                                <img src="./images/icon_bookmark.png" alt="즐겨찾기" class="bookmark">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="city-item">
+                                <a href="#void" class="city-text">
+                                    <p>제주</p><span>CJU</span>
+                                </a>
+                                <img src="./images/icon_bookmark.png" alt="즐겨찾기">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="city-item">
+                                <a href="#void" class="city-text">
+                                    <p>서울/인천</p><span>ICN</span>
+                                </a>
+                                <img src="./images/icon_bookmark.png" alt="즐겨찾기"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    </li>
+                </div>
             </div>
 
             <div class="btn-close"><img src="./images/btn_close.png" alt="닫기"></div>
