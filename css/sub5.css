@@ -1,0 +1,85 @@
+main .inner {
+    max-width: 1400px;
+    margin: 120px auto;
+}
+
+.baggage-wrap h2 {
+    font-size: 3rem;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.baggage-note li {
+    font-size: 1.6rem;
+    color: #222222;
+    line-height: 1.6;
+}
+
+.baggage-note li:first-child {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.note-wrap {
+    width: 100%;
+    height: 114px;
+    background: #EEEEEE;
+    margin-top: 40px;
+    position: relative;
+}
+
+.note {
+    display: flex;
+    gap: 100px;
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+}
+
+.note li {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-right: 320px;
+}
+
+.note li:first-child {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.note-btn {
+    display: block;
+    width: 200px;
+    background: #062551;
+    color: #fff;
+    border-radius: 6px;
+    padding: 20px 10px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.note-wrap2{
+    margin-top: 80px;
+    height: 360px;
+    background: #eeeeeea6;}
+
+.note_2{
+    padding: 50px 40px;
+    color:#222222;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+
+.note_2>p:first-child{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.note_2>p:last-child{
+    margin: 10px;
+}
+
+.note_2 strong{
+    color: #062551;
+}

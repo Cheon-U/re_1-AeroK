@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/pretendard.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub3.css">
+    <script>
+        // header.html 불러오기
+        fetch('header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.querySelector('#header').innerHTML = data;
+            });
+
+        // footer.html 불러오기
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.querySelector('#footer').innerHTML = data;
+            });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="inner">
+            <div class="baggage-wrap">
+                <div class="title">
+                    <h2>특수 수하물</h2>
+                    <p>항공사에 탁송 의뢰가 가능한 수하물로 일반 위탁 수하물 허용량과는 상관없이 별도의 운임을 부과하는 수하물입니다.</p>
+                </div>
+
+                <!-- 특수 수하물 안내  -->
+                <div class="special-baggage">
+                    <p class="baggage-title">특수 수하물 안내</p>
+                    <ul class="note-list">
+                        <li>· 위탁 수하물의 3면의 합이 203cm를 초과하는 대형 수하물이거나 스포츠 장비에 해당하는 경우, 특수 수하물 요금 부과</li>
+                        <li>· 무게 32kg, 3변(가로/세로/높이)의 합이 277cm(9ft) 이상인 스포츠 장비는 위탁 수하물로 접수 불가</li>
+                        <li>· 베트남, 몽골 현지 결제 시, 현지 통화만 사용 가능</li>
+                        <li>&nbsp;&nbsp;* USD 표기에 기준 환율 적용하여 현지 통화로 청구되며, 기준 환율은 매달 변동 가능 </li>
+                        <li>· 모든 장비는 운송 도중 파손될 가능성이 높으므로, 전용 가방에 안전하게 포장한 상태로 위탁하셔야 합니다.</li>
+                    </ul>
+                </div>
+
+                <div class="baggage-fee">
+                    <div class="baggage-header">
+                        <div class="col">종류</div>
+                        <div class="col">요금</div>
+                    </div>
+
+                    <div class="baggage-body">
+                        <div class="col type">
+                            <ul>
+                                <li>· 스키(1쌍), 스노우보드, 롱보드 등 보드류</li>
+                                <li>· 서핑보드, 윈드서핑, 웨이크보드, 수상스키 등 보드류</li>
+                                <li>· 다이빙 장비<br>
+                                    <small>스쿠버 다이버 장비를 포함한 장유예의 착용, 헬멧, 장비들이 안전히 빈 상태에서 전용 가방에 포장</small>
+                                </li>
+                                <li>
+                                    · 자전거<br>
+                                    <small>페달 분리, 핸들 고정시킨 후 하드케이스 또는 카드보드 박스로 포장</small>
+                                </li>
+                                <li>· 하키 / 라크로스 장비</li>
+                            </ul>
+                        </div>
+
+                        <div class="col fee">
+                            <p><strong>기본요금 KRW10,000</strong><br>
+                                (JPY1,000 / TWD300 / USD10 / CNY60)</p>
+                            <p class="Additional">+ 무료 수하물 허용량 초과 시, 초과 요금이 징수</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 품목별 적용 사례 및 유의사항 안내 -->
+                <div class="special-baggage">
+                    <p class="baggage-title">품목별 적용 사례 및 유의사항 안내</p>
+                    <!-- 표리스트 -->
+                    <div class="item-table">
+                        <table>
+                            <tr>
+                                <td class="icon">
+                                    <img src="./images/skiing.svg" alt="스키">스키·스노우 보드 및 서핑보드
+                                </td>
+                                <td class="desc">
+                                    모든 장비는 운송 도중 파손될 가능성이 높으므로, 전용 가방에 안전하게 포장한 상태로 위탁하셔야 합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="icon">
+                                    <img src="./images/scubamask.svg" alt="스킨스쿠버">스킨스쿠버 장비 세트
+                                </td>
+                                <td class="desc">
+                                    • 스킨스쿠버 장비는 공기통이 완전히 빈 상태로 전용 가방에 안전하게 포장되어야 합니다. (개당 : 20kg / 158cm 미만의 가방)<br>
+                                    • 스킨스쿠버 장비 세트의 기준은 산소통 포함 여부로 결정합니다. (산소통 포함한 경우에만 특수 수하물 적용)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="icon">
+                                    <img src="./images/bicycle.svg" alt="자전거">자전거</td>
+                                <td class="desc">
+                                    • 바퀴나 프레임, 핸들 등이 휠 수 있으므로, 반드시 페달을 분리하고 핸들을 고정시킨 후 하드케이스 또는 카드 보드 박스로 포장하셔야 합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="icon">
+                                    <img src="./images/golfball.svg" alt="골프">골프클럽
+                                </td>
+                                <td class="desc">
+                                    • 항공안전 및 보안에 관한 법령에 따라, 날카로운 골프채로 기내 반입이 금지되어 있으므로 반드시 위탁 수하물로 처리<br>
+                                    • 산업안에 길이 203cm를 초과하지 않는 골프백은 특수 수하물이 아닌 일반 수하물과 동일하게 처리되며, 203cm를 초과하는<br>
+                                    &nbsp;&nbsp;&nbsp;골프백의 경우 특수 수하물 요금이 부과됩니다.<br>
+                                    • 골프클럽은 운송 도중 파손의 위험이 있어 전용 하드케이스에 넣어 위탁하셔야 하며, 전용 하드케이스에 넣지 않은 골프채는 파손 시 보상이 불가합니다.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                 <!-- 유의사항 -->
+                <div class="note-wrap">
+                    <div class="note">
+                        <p>유의사항</p>
+                        <ul>
+                            <li>· 스포츠 용품은 운송 도중 내용물이 휘거나 파손될 가능성이 높으니 주의하여 포장해 주세요.</li>
+                            <li>· 하드 케이스(전용 포장 용기 포함)에 넣지 않은 스포츠 용품은 위탁 수하물 접수가 불가할 수 있으며, 파손 시 보상이 불가하오니 이점 유의해 주세요.</li>
+                             <li>· 엔진이 장착된 동력 자전거나 스쿠터, 오토바이, 제트스키 등 화재나 폭발 가능성이 있는 장비는 수하물로 운반이 불가능해요.</li>
+                            <li>· 모든 특수 수하물은 위탁 수하물 무료 허용량과 상관없이 별도의 요금을 징수하고 있어요.</li>
+                             <li>· 특수 수하물 요금에 대한 환불은 결제하신 공항에서만 가능해요.</li>
+                             <li>· 203cm 이하 수하물은 일반 위탁 수하물로 접수가 가능하며, 204~277cm 이하의 수하물이 특수 수하물로써 별도의 비용을 지불해야 해요.</li>
+                             <li>· 상기 외의 물품은 운송 불가이며, 별도 안내를 원하실 경우 고객센터(1899-2299)로 문의해 주세요.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <div id="footer"></div>
+</body>
+
+</html>

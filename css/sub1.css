@@ -1,0 +1,288 @@
+main .inner {
+    max-width: 1400px;
+    margin: 120px auto;
+}
+
+/* 전체 영역 */
+.baggage-wrap {
+    height: auto;
+    /* border-bottom: 1px solid #DDDDDD; */
+    padding-bottom: 40px;
+}
+
+/* 제목 영역 */
+.title > h2 {
+    font-size: 4rem;
+    color: #002554;
+    margin-bottom: 2rem;
+}
+
+.title > p {
+    font-size: 2rem;
+    color: #222222;
+    margin-bottom: 6rem;
+}
+
+/* 탭 메뉴 */
+.tab-menu {
+    display: flex;
+}
+
+.tab-menu > li {
+    width: 50%;
+    height: 60px;
+    background-color: #F0F0F0;
+    color: #002554;
+    line-height: 3;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tab-menu > .active {
+    background-color: #002554;
+    font-weight: 500;
+    color: #fff;
+}
+
+.tab-menu>li:hover{
+    background-color: #FFB81c;
+    color: #fff;
+}
+
+/* 공통 안내 */
+.baggage-notice {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 380px;
+}
+
+.baggage-notice img {
+    width: 100%;
+    margin: 20px;
+}
+
+.baggage-notice > .baggage-text {
+    margin: 100px;
+}
+
+.baggage-notice p {
+    font-size: 2.6rem;
+    color: #222222;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.baggage-notice li {
+    font-size: 1.8rem;
+    color: #222222;
+    line-height: 1.4;
+}
+
+.line {
+    outline: 1px solid #DDDDDD;
+    margin: 35px 0;
+}
+
+/* 회색 박스 공지 */
+.note-wrap {
+    width: 100%;
+    height: 228px;
+    background: #EEEEEE;
+    margin-top: 100px;
+}
+
+.note {
+    padding: 40px 50px;
+}
+
+.note > p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.note li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* 무료 휴대 수하물 안내 제목 */
+.free-title {
+    font-size: 3rem;
+    color: #222222;
+    margin-top: 80px;
+    font-weight: 600;
+}
+
+/* 좌우 2박스 레이아웃 */
+.free-baggage {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* 반응형 대응 */
+}
+
+/* 각각의 안내 박스 */
+.info-box {
+    border: 1px solid #DDDDDD;
+    width: 48%;
+    height: auto;
+    /* padding: 20px; */
+    padding-bottom: 30px;
+    background: #fff;
+    position: relative;
+}
+
+/* 박스 제목 */
+.info-box > .info-title {
+    font-size: 2rem;
+    width: 100%;
+    height: 60px;
+    color: #222222;
+    text-align: center;
+    line-height: 60px;
+    background: #E7EAEE;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* 내용 */
+.info-box ul {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.info-box li {
+    font-size: 1.6rem;
+    color: #222222;
+    line-height: 1.6;
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+/* 이미지 li */
+.info-box li.info-img {
+    display: inline-block;
+    width: 47%;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 1%; /* 좌우 여백 추가로 간격 확보 */
+    margin-bottom: 16px;
+}
+
+.info-box li.info-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* 주석(작은 글씨) */
+.small-note {
+    font-size: 1.4rem;
+    color: #777;
+    margin-top: 12px;
+    line-height: 1.4;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.small-note>.small-line{
+    display: block;  
+    width: 580px;
+    border-top: 1px solid #DDDDDD;
+    margin-bottom: 20px;
+}
+
+.small-note img {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+/* 서브 페이지 숨김 */
+.sub2 {
+    display: none;
+}
+
+
+/* 서브2 */
+/* 표 */
+.baggage-table {
+  max-width: 100%;
+  margin: 20px auto;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #002554;
+  /* border: 1px solid #ddd; */
+  border-radius: 6px;
+}
+
+.baggage-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.baggage-table th,
+.baggage-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  width: 350px;
+  height: 80px;
+}
+
+.baggage-table thead th {
+  background: #f5f7fa;
+  font-weight: 500;
+}
+
+.baggage-table .table-title {
+  background: #f5f7fa;
+  text-align: center;
+}
+
+.baggage-table .small {
+  display: block;
+  font-size: 1.6rem;
+  color: #737373;
+  margin-top: 4px;
+}
+
+.baggage-table .row-title {
+  text-align: center;
+  font-weight: 500;
+  color: #333;;
+  background: #fafafa;
+  width: 150px;
+}
+.baggage-table td.allowance{
+  color: #333; 
+}
+
+.baggage-table .foot td {
+  background: #f9fafb;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.baggage-table .addNote {
+  margin-top: 8px;
+  font-size: 1.6rem;
+  color: #737373;
+  text-align: left;
+}
+
+.notelist>.note-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 6px 0px;
+    color: #333;
+    margin-top: 30px;
+}
+
+.notelist li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #333;
+}
