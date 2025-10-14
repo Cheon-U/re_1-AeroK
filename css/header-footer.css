@@ -24,6 +24,13 @@ header {
 
 }
 
+.ham-btn {
+  display: none;
+  line-height: 70px;
+  width: 32px;
+  align-items: center;
+}
+
 .logo {
   height: 70px;
   display: flex;
@@ -197,7 +204,7 @@ header {
 /* footer */
 
 footer {
-  margin-top:120px;
+  /* margin-top: 120px; */
   height: 420px;
   display: flex;
   align-items: center;

@@ -17,10 +17,10 @@
     font-size: 1.8rem;
   }
 
-  .ticket-content-wrap .button{
+  .ticket-content-wrap .button {
     font-size: 1.8rem;
   }
-  
+
   .fav-wrap {
     height: auto;
   }
@@ -226,7 +226,7 @@
     width: 9rem;
   }
 
-  
+
   .ticket-content-wrap {
     height: 8rem;
   }
@@ -317,20 +317,23 @@
     margin-bottom: 20px;
   }
 
-  .notice-box1, .notice-box2, .event-banner {
+  .notice-box1,
+  .notice-box2,
+  .event-banner {
     margin-bottom: 1.4rem;
   }
 
-  .event-img img{
+  .event-img img {
     width: 100%;
     height: 14rem;
   }
-  .event-right{
+
+  .event-right {
     gap: 0;
   }
 
-  .youtube{
-  
+  .youtube {
+
     display: block;
   }
 
@@ -388,9 +391,10 @@
     margin-top: 2rem;
   }
 
-  .ticket-search img{
-    display:block;
+  .ticket-search img {
+    display: block;
   }
+
   .notice-wrap .contents,
   .notice-list {
     display: block;
@@ -406,16 +410,35 @@
 }
 
 @media screen and (max-width:768px) {
+
+  /* 숨기기 */
+  .nav,
+  .gnb>button,
+  .login,
+  .lang {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  /* 보이기 */
+  .ham-btn {
+    display: block;
+    top: 0;
+    right: 30px;
+    position: absolute;
+    /* background: pink; */
+  }
+
+  .notice-wrap .contents,
+  .notice-list {
+    display: block;
+  }
+
   .ticket-wrap .inner {
     top: 2vh;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .gnb {
-    display: none;
   }
 
   .ticket-content-wrap {
@@ -427,11 +450,46 @@
     margin-top: 2rem;
   }
 
-  .notice-wrap .contents,
-  .notice-list {
+  /* 모바일 서브메뉴 */
+
+  .header-wrap {
+    position: fixed;
     display: block;
+    width: 70%;
+    height: 100%;
+    background: #040422;
+    top: 0;
+    left: 0;
+    padding: 0;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .main-menu {
+    display: inherit;
+    /* background: #040422; */
 
   }
+
+  .m1 {
+    border-bottom: 1px solid #38395c;
+    padding: 30px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 18px;
+  }
+
+  .close-btn {
+    position: absolute;
+    width: 32px;
+    top: 10px;
+    right: -45px;
+  }
+
+
+
 }
 
 @media screen and (max-width:640px) {}

@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="images/png" href="./images/favicon.ico">
     <link rel="stylesheet" href="./css/respond.css">
+    <script defer src="./js/mouse.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./js/text.js"></script>
+    <!-- <script defer src="./js/99-submenu.js"></script> -->
 </head>
 
 </head>
 
 <body>
     <header>
+         <div class="ham-btn"><a href="#"><img src="./images/ham.svg" alt="메뉴 아이콘"></a></div>
         <div class="header-wrap">
             <h1 class="logo"><a href="#"><img src="./images/Aerok-logo.svg" alt="에어로케이 로고"></a></h1>
             <div class="nav">
@@ -137,12 +140,13 @@
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
                     </li>
                 </ul>
             </div>
+           
             <div class="gnb">
+                
                 <button>
                     <img src="./images/icon-search.svg" alt="검색아이콘">
                 </button>
@@ -206,7 +210,6 @@
             </div>
 
             <div class="inner">
-
                 <!-- 아래부분을 전체 복붙해야함 -->
                 <div class="ticket-menu-wrap">
                     <ul class="tab-menu-list">
@@ -355,84 +358,76 @@
                     <h2>지금 뜨는 인기노선</h2>
                     <img src="./images/more-btn.svg" alt="더보기 버튼" class="more-btn">
                 </div>
-                <div class="fav-list">
-                    <div class="fav CJJ-TEI active"><a href="#">
-                            <div class="img-box"><img src="./images/TEI.jpg" alt=""></div>
-                            <div class="text-box">
-                                <div class="fav-title">
-                                    <p>청주</p>
-                                    <p class="under"></p>
-                                    <p>타이페이</p>
-                                </div>
-                                <div class="fav-price-wrap">
-                                    <div class="fav-price">
-                                        <p>KRW</p>
-                                        <p>77,400 ~</p>
+                <div class="special">
+                    <div class="cursor" id="cursor">view more</div>
+                    <div class="fav-list">
+                        <div class="fav CJJ-TEI active"><a href="#">
+                                <div class="img-box"><img src="./images/TEI.jpg" alt=""></div>
+                                <div class="text-box">
+                                    <div class="fav-title">
+                                        <p>청주</p>
+                                        <p class="under"></p>
+                                        <p>타이페이</p>
+                                    </div>
+                                    <div class="fav-price-wrap">
+                                        <div class="fav-price">
+                                            <p>KRW</p>
+                                            <p>77,400 ~</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a></div>
-                    <div class="fav CJJ-IBR"><a href="#">
-                            <div class="img-box"><img src="./images/IBR.jpg" alt=""></div>
-                            <div class="text-box">
-                                <div class="fav-title">
-                                    <p>청주</p>
-                                    <p class="under"></p>
-                                    <p>이바라키</p>
+                            </a></div>
+                        <div class="fav CJJ-IBR"><a href="#">
+                                <div class="img-box"><img src="./images/IBR.jpg" alt=""></div>
+                                <div class="text-box">
+                                    <div class="fav-title">
+                                        <p>청주</p>
+                                        <p class="under"></p>
+                                        <p>이바라키</p>
+                                    </div>
+                                    <div class="fav-price">
+                                        <p>KRW</p>
+                                        <p>52,300 ~</p>
+                                    </div>
                                 </div>
-                                <div class="fav-price">
-                                    <p>KRW</p>
-                                    <p>52,300 ~</p>
+                            </a></div>
+                        <div class="fav CJJ-NGO"><a href="#">
+                                <div class="img-box"><img src="./images/NGO.jpg" alt=""></div>
+                                <div class="text-box">
+                                    <div class="fav-title">
+                                        <p>청주</p>
+                                        <p class="under"></p>
+                                        <p>나고야</p>
+                                    </div>
+                                    <div class="fav-price">
+                                        <p>KRW</p>
+                                        <p>41,300 ~</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a></div>
-                    <div class="fav CJJ-NGO"><a href="#">
-                            <div class="img-box"><img src="./images/NGO.jpg" alt=""></div>
-                            <div class="text-box">
-                                <div class="fav-title">
-                                    <p>청주</p>
-                                    <p class="under"></p>
-                                    <p>나고야</p>
+                            </a></div>
+                        <div class="fav INC-KIX"><a href="#">
+                                <div class="img-box"><img src="./images/KIX.jpg" alt=""></div>
+                                <div class="text-box">
+                                    <div class="fav-title">
+                                        <p>인천</p>
+                                        <p class="under"></p>
+                                        <p>오사카</p>
+                                    </div>
+                                    <div class="fav-price">
+                                        <p>KRW</p>
+                                        <p>46,400 ~</p>
+                                    </div>
                                 </div>
-                                <div class="fav-price">
-                                    <p>KRW</p>
-                                    <p>41,300 ~</p>
-                                </div>
-                            </div>
-                        </a></div>
-                    <div class="fav INC-KIX"><a href="#">
-                            <div class="img-box"><img src="./images/KIX.jpg" alt=""></div>
-                            <div class="text-box">
-                                <div class="fav-title">
-                                    <p>인천</p>
-                                    <p class="under"></p>
-                                    <p>오사카</p>
-                                </div>
-                                <div class="fav-price">
-                                    <p>KRW</p>
-                                    <p>46,400 ~</p>
-                                </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <!-- 0918 line 삭제 -->
-                <!-- <div class="line-wrap">
-          <div class="line"></div>
-          <div class="line-in"></div>
-        </div> -->
             </div>
         </section>
 
 
         <section class="notice-wrap">
             <div class="notification-box">
-
-                <!-- lsj -->
-                <!-- <section class="notification">
-      <div class="notice-wrap"> -->
-
-                <!-- 수정 inner 추가 -->
                 <div class="inner">
                     <div class="notice-title-wrap">
                         <h2 class="notice-title">에어로케이의 새로운 소식</h2>
@@ -443,34 +438,33 @@
                         </ul>
                     </div>
                     <div class="contents">
-                        <div class="event-banner">
+                        <div class="event-banner special">
                             <div class="event-img"><img src="./images/event-1.png" alt=""></div>
                             <div class="evnet-contents-wrap">
                                 <p class="event-title">청주-오비히로 단독 운항 기념 항공권 이벤트</p>
                                 <p class="date">2025.08.01~2025.09.14</p>
                             </div>
                         </div>
-                        <div class="event-right">
+                        <div class="event-right special">
                             <div class="notice-list">
                                 <div class="notice-box1 nbox">
                                     <div class="cate-title"><a href="#void">공지사항</a></div>
                                     <p class="box-title">다자녀 가구 우선 출국(출발)서비스안내</p>
                                     <p class="box-article">2025년 6월 10일부터 3자녀 이상 다자녀 가구를 대상으로 우선출국 서비스가 시행됩니다.</p>
                                     <p class="date">2025.05.26</p>
-                                    <p class="notice-btn active"><a href="#void">View more</a></p>
                                 </div>
                                 <div class="notice-box2 nbox">
                                     <div class="cate-title"><a href="#void">안내사항</a></div>
                                     <!-- ji -->
                                     <!-- <p class="box-title">국제선 항공기 지연 안내(25.08.13~25.08.14 / RF531, RF532)</p> -->
                                     <p class="box-title">국제선 항공기 지연 안내(25.08.13~25.08.14 / RF531..</p>
-                                    <p class="box-article">안녕하세요. 새로운 여정의 시작, 에어로케이항공입니다. 현지 공항 혼잡으로 인하여 항공기가 지연되어...
+                                    <p class="box-article">안녕하세요. 새로운 여정의 시작, 에어로케이항공입니다. 현지 공항 혼잡으로 인하여 항공기가
+                                        지연되어...
                                     </p>
                                     <p class="date">2025.05.26</p>
-                                    <p class="notice-btn"><a href="#void">View more</a></p>
                                 </div>
                             </div>
-                            <div class="youtube">
+                            <div class="youtube special">
                                 <div class="youtube-play"><iframe width="560" height="315"
                                         src="https://www.youtube.com/embed/E49bris6WFk?si=2k6p1MaLvW0rOcxZ"
                                         title="YouTube video player" frameborder="0"
@@ -481,7 +475,8 @@
                                 <div class="youtube-box">
                                     <div class="cate-title"><a href="#void">Youtube</a></div>
                                     <p class="box-title">에어로케이 x 롱블랙 특별 전세기</p>
-                                    <p class="box-article">에어로케이와 지식 구독 서비스 롱블랙이 도쿄행 특별 전세기를 준비하여 4인의 기획자를 만나고 왔습니다.</p>
+                                    <p class="box-article">에어로케이와 지식 구독 서비스 롱블랙이 도쿄행 특별 전세기를 준비하여 4인의 기획자를 만나고 왔습니다.
+                                    </p>
                                     <p class="date">#에어로케이 #롱블랙</p>
                                 </div>
 
@@ -964,6 +959,47 @@
                 this.classList.add("active");
             })
         })
+
+        // 마우스 커서 따라다니기
+        let offsetX = 0, offsetY = 0;
+        const sections = document.querySelectorAll('.special');
+        const cursor = document.getElementById('cursor');
+        let x = 0, y = 0, cx = 0, cy = 0, active = false;
+
+        // 마우스 이벤트 등록
+        sections.forEach(section => {
+            section.addEventListener('mouseenter', () => {
+                active = true;
+                document.body.style.cursor = 'none';
+                cursor.style.opacity = 1;
+            });
+            section.addEventListener('mouseleave', () => {
+                active = false;
+                document.body.style.cursor = '';
+                cursor.style.opacity = 0;
+            });
+        });
+
+        // 마우스 좌표 추적
+        document.addEventListener('mousemove', (e) => {
+            x = e.clientX;
+            y = e.clientY;
+        });
+
+        // 커서 따라다니기 애니메이션
+        (function animate() {
+            cx += (x - cx - offsetX) * 0.15;
+            cy += (y - cy - offsetY) * 0.15;
+            if (active) {
+                cursor.style.transform = `translate(${cx}px,${cy}px) translate(-50%, -50%)`;
+            }
+            requestAnimationFrame(animate);
+        })(); F
+
+
+
+
+
     </script>
 </body>
 
