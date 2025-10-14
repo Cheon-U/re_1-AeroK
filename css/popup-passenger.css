@@ -143,6 +143,7 @@ button img {
     text-align: center;
     line-height: 60px;
     margin-top: 20px;
+    font-size: var(--text3);
 }
 
 .age-search {
@@ -184,6 +185,7 @@ button img {
     overflow: hidden;
     transition: height 0.3s ease;
     /* box-sizing: border-box; */
+    font-size: var(--text3);
 
 }
 
