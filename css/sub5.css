@@ -59,6 +59,10 @@ main .subinner {
     margin-left: 130px;
 }
 
+.note-btn .b-name{
+    color: #fff;
+}
+
 .note-wrap2{
     margin-top: 80px;
     height: 360px;
