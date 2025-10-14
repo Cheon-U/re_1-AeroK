@@ -77,7 +77,6 @@ tabTitles.forEach((tab, id) => {
 
 //section4 _ swiper
 let benefitSwiper = new Swiper(".benefit-wrap", {
-<<<<<<< HEAD
   loop: true,
   // autoplay: {
   //     delay: 3000
@@ -98,29 +97,6 @@ let benefitSwiper = new Swiper(".benefit-wrap", {
     1024: {
       slidesPerView: 4,
       spaceBetween: 30,
-=======
-    loop: true,
-    autoplay: {
-        delay: 3000
-    },
-    slidesPerView: 1,
-    breakpoints: {
-        //480~767
-        480: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        //768~1024
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        //1024 ~~~
-        1024: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-        }
->>>>>>> 06e06c726ed5e27f6069b4be42375527a202d5c3
     }
   }
 })
