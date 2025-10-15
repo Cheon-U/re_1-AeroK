@@ -1,0 +1,130 @@
+:root {
+    --main-color-yellow: #FEC739;
+    --main-color-blue: #002554;
+    --primary-color: #002554;
+    --bg-color: #05183B;
+    --sub-color: #FFB81c;
+    --font-color-bk: #222222;
+    --font-color-gr: #6c737e;
+    --font-color-dark: #666666;
+    --title1: 4.8rem;
+    --title2: 4.0rem;
+    --title3: 3.0rem;
+    --title4: 2.6rem;
+    --title5: 2.4rem;
+    --text1: 2.2rem;
+    --text2: 2.0rem;
+    --text3: 1.8rem;
+    --text4: 1.6rem;
+    --bold: 700;
+    --semi: 600;
+    --medium: 500;
+    --regular: 400;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Pretendard, "돋움", sans-serif;
+    font-size: 10px;
+}
+
+.popup-title {
+    font-size: var(--title4);
+    font-weight: var(--semi);
+    padding: 40px 0 30px 40px;
+    color: var(--main-color-blue);
+}
+
+.calendar {
+    margin-left: 90px;
+}
+
+.startDate>.flatpickr-input {
+    margin-left: 90px;
+}
+
+
+/* 캘린더 테두리 */
+.flatpickr-calendar {
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
+}
+
+
+
+/* 일요일 표시 */
+.sunday {
+    color: red;
+}
+
+/* 색상 커스터마이징 */
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day:hover,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.prevMonthDay:hover,
+.flatpickr-day.nextMonthDay:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay,
+.flatpickr-day:focus,
+.flatpickr-day.prevMonthDay:focus,
+.flatpickr-day.nextMonthDay:focus {
+    background: #FEC739;
+    border-color: #FEC739;
+    color: white;
+}
+
+.flatpickr-day.inRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange {
+    background: #FEC739;
+    color: white;
+}
+
+.flatpickr-day.inRange,
+.flatpickr-day.prevMonthDay.inRange,
+.flatpickr-day.nextMonthDay.inRange,
+.flatpickr-day.today.inRange,
+.flatpickr-day.prevMonthDay.today.inRange,
+.flatpickr-day.nextMonthDay.today.inRange {
+    background: #e6e6e6;
+}
+
+.flatpickr-months,
+.flatpickr-month {
+    background: transparent;
+    height: 50px;
+}
+
+.flatpickr-current-month {
+    /* color: #fff; */
+}
+
+/* 월 텍스트 색상 */
+.flatpickr-current-month,
+.cur-month {
+    color: var(--main-color-blue);
+    font-weight: 600;
+}
+
+/* 년도 텍스트 색상 */
+.flatpickr-current-month input.cur-year {
+    color: var(--main-color-blue);
+    font-weight: 600;
+}

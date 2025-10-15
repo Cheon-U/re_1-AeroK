@@ -215,7 +215,7 @@ header {
 
 /* footer */
 .footer-wrap {
-  height: 500px;
+  /* height: 500px; */
   
   background:#05183B;
 
@@ -227,7 +227,8 @@ header {
   align-items: center;
 }
 
-.footer .inner{
+footer .inner{
+  padding: 40px 0;
   margin: 0 auto;
 }
 

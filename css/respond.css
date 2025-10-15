@@ -19,18 +19,28 @@
 
   .ticket-wrap .inner{
     height:auto;
+
+    bottom:0px;
   }
 
   .swiper-slide .text-box {
+    max-width: 1360px;
     padding: 0 20px;
+    top:30%;
   }
 
   .main-slider-wrap .swiper-pagination {
+    max-width: 1360px;
     padding: 0 20px;
+    top:38%;
   }
 
   .ticket-search {
     padding: 24px;
+  }
+
+  footer .inner{
+    padding:40px 20px;
   }
 }
 
@@ -531,7 +541,8 @@
   /* footer */
 
   footer .inner {
-    margin: 40px auto;
+    padding: 20px;
+    /* margin: 40px auto; */
   }
 
   .footer-wrap {

@@ -1,0 +1,140 @@
+main .subinner {
+    max-width: 1400px;
+    margin: 120px auto;
+}
+.baggage-wrap {
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.title>h2 {
+    font-size: 4rem;
+    color: #002554;
+    margin-bottom: 2rem;
+}
+
+.title>p {
+    font-size: 2rem;
+    color: #222222;
+    margin-bottom: 6rem;
+}
+
+.tab-menu {
+    display: flex;
+    gap: 24px;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.tab-menu>.button {
+    color: #737373;
+
+}
+
+.tab-menu>.active {
+    color: #002554;
+    border-bottom: 2px solid;
+}
+
+.section-title {
+    display: flex; 
+    align-items: center;
+    font-size: 3rem;
+    color: #333333;
+    margin-top: 70px;
+    gap: 18px;
+}
+
+.addnote{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #002554;
+}
+
+.forbidden-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.forbidden-list p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #002554;
+    margin-right: 50px;
+    line-height: 163px;
+}
+
+.forbidden-list>img {
+    max-width: 60%;
+}
+
+.note-list {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding-top: 30px;
+}
+
+.note-list:first-child {
+    padding-top: 74px; /* 첫 번째 항목에 적용할 값 */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #737373;
+    margin:10px 0 10px;
+}
+
+.caution-list{
+    font-size: 1.6rem;
+     line-height: 1.6;
+    color: #737373;
+}
+
+.btn-container{
+    display: flex;         /* 버튼들을 가로로 배열 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    flex-wrap: wrap; 
+    gap: 16px; 
+    margin-top: 50px;
+    
+}
+
+.btns a {
+    display: flex;            /* 아이콘 + 텍스트 한 줄 정렬 */
+    align-items: center;      /* 세로 가운데 정렬 */
+    gap: 8px;                 /* 아이콘과 텍스트 사이 간격 */
+    background-color: #002554;
+    color: white;
+    font-size: 1.6rem;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+
+.btns img{
+    width: 20px;              /* 아이콘 크기 조정 */
+    height: 20px;
+}
+
+.note-wrap {
+    width: 100%;
+    height: 228px;
+    background: #EEEEEE;
+    margin-top: 90px;
+}
+
+.note {
+    padding: 40px 50px;
+}
+
+.note>p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.note li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
