@@ -19,7 +19,7 @@ main .subinner {
     margin-bottom: 6rem;
 }
 
-.tab-menu {
+/* .tab-menu {
     display: flex;
     gap: 24px;
     font-size: 2.4rem;
@@ -28,13 +28,12 @@ main .subinner {
 
 .tab-menu>.button {
     color: #737373;
-
 }
 
 .tab-menu>.active {
     color: #002554;
     border-bottom: 2px solid;
-}
+} */
 
 .section-title {
     display: flex; 
