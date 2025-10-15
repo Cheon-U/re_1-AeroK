@@ -1,52 +1,48 @@
 /* 공통사항 */
 /* 모든 여백 제거 */
 /* 테두리와 여백이 width, height안에 포함되도록 -> box-sizing */
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 
 /* li 장식제거 */
-li {
-    list-style: none;
+li{
+    list-style:none;
 }
 
 /* a 밑줄제거, 글자색 */
-a {
-    text-decoration: none;
+a{
+    text-decoration:none; 
     /* color:#222; */
     /* 부모의 color 속성을 상속받아서 사용하겠다 */
-    color: inherit;
+    color:inherit;
 }
 
 /* img,video 위아래 정렬 */
-img,
-video {
-    vertical-align: middle;
+img,video{
+    vertical-align:middle;
 }
 
 /* em,i,address 글자 똑바로 */
-em,
-i,
-address {
-    font-style: normal;
-}
+em,i,address{font-style:normal;}
 
 /* blind */
 /* 눈에만 안보일뿐 목차는 남아있음 */
-.blind {
+.blind{
     position: absolute;
     top: -99999px;
 }
-
-html {
+/* body */
+html{
     font-size: 10px;
-    font-family: Pretendard, "돋움", sans-serif;
+    /* 폰트이름이 한글이면 무조건 따옴표 붙이기 */
+    font-family: Pretendard,"돋움",sans-serif;
+    color: #222;
 }
 
-/* body */
+html,
 body {
-    /* 폰트이름이 한글이면 무조건 따옴표 붙이기 */
-    color: #222;
+  height: 100%;
 }

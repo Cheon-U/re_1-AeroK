@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>항공권 예매 | Aero K</title>
+  <link rel="stylesheet" href="./css/pretendard.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header-footer.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/respond.css">
+  <link rel="stylesheet" href="./css/sub-03-01-01,02.css">
+  <link rel="icon" type="images/png" href="./images/favicon.ico">
+
+  <link rel="stylesheet" href="./css/sub-01-01-01.css">
+
+  <script defer src="./js/sub-01-01-01.js"></script>
+  <script defer src="./js/headerFooter.js"></script>
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <main>
+    <section class="ticket-wrap">
+      <div class="page-location-wrap">
+        <a href="#"><img src="./images/home-icon.svg" alt="홈"></a>
+        <img src="./images/alrrow-right.svg" alt="화살표 아이콘">
+        <p>예약</p>
+        <img src="./images/alrrow-right.svg" alt="화살표 아이콘">
+        <p>예약 및 조회</p>
+        <img src="./images/alrrow-right.svg" alt="화살표 아이콘">
+        <p class="active">항공권 예약</p>
+      </div>
+      <div class="section-title">
+        <h2>항공권 예매</h2>
+        <p>지금 에어로케이와 함께 떠나보세요!</p>
+      </div>
+
+      <div class="inner">
+        <div class="ticket-menu-wrap">
+          <div class="ticket-content-wrap active">
+            <div class="ticket-list">
+              <div class="itinerary">
+                <div class="ticket-search">
+                  <span>출발지</span>
+                  <div class="date">
+                    <button type="button" id="popup-search-start" class="active">서울</button>
+                  </div>
+                </div>
+                <img src="./images/lyra-icon-ArrowsLeftRight.svg" alt="버튼이미지">
+                <div class="ticket-search">
+                  <span>도착지</span>
+                  <div class="date">
+                    <button type="button" id="popup-search-arrived" class="active">후쿠오카</button>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar">
+                <div class="ticket-search">
+                  <span>출발일</span>
+                  <div class="date">
+                    <img src="./images/lyra-icon-CalendarBlank.svg" alt="달력아이콘">
+                    <button type="button" id="popup-calendar-start" class="active">25 / 09 / 26</button>
+                  </div>
+                </div>
+                <img src="./images/Frame 505.svg" alt="아이콘">
+                <div class="ticket-search">
+                  <span>도착일</span>
+                  <div class="date">
+                    <img src="./images/lyra-icon-CalendarBlank.svg" alt="달력아이콘">
+                    <button type="button" id="popup-calendar-end" class="active">25 / 09 / 30</button>
+                  </div>
+                </div>
+              </div>
+              <div class="passengers">
+                <div class="ticket-search">
+                  <span>탑승객</span>
+                  <div class="person">
+                    <img src="./images/icon-user.svg" alt="사람아이콘">
+                    <button type="button" id="popup-passenger" class="passenger-display active">성인 0, 소아 0, 유아
+                      0</button>
+                  </div>
+                </div>
+                <div class="ticket-search">
+                  <span>좌석등급</span>
+                  <div class="person">
+                    <img src="./images/car-seat-icon.svg" alt="의자아이콘">
+                    <button type="button" id="popup-select-seat" class="active">일등석</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button><a href="./sub-01-01-01-01.html">항공권 검색</a></button>
+          </div>
+          <div class="ticket-content-wrap">
+            <div class="ticket-list">
+              <div class="flight-search">
+                <div class="ticket-search">
+                  <span>예약번호 또는 항공권번호</span>
+                  <input type="text" placeholder="예)A1B1C1 또는 2501234567890">
+                </div>
+              </div>
+              <div class="calendar">
+                <div class="ticket-search">
+                  <span>출발일</span>
+                  <div class="date">
+                    <img src="./images/lyra-icon-CalendarBlank.svg" alt="달력아이콘">
+                    <button type="button">YY / MM / DD</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="last-name">
+                <div class="ticket-search">
+                  <span>성</span>
+                  <div class="person">
+                    <button type="button">Last name</button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="first-name">
+                <div class="ticket-search">
+                  <span>이름</span>
+                  <div class="person">
+                    <button type="button">first name</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button>조회</button>
+          </div>
+          <div class="ticket-content-wrap">
+            <div class="ticket-list">
+              <div class="flight-search">
+                <div class="ticket-search">
+                  <span>예약번호 또는 항공권번호</span>
+                  <input type="text" placeholder="예)A1B1C1 또는 2501234567890">
+                </div>
+              </div>
+              <div class="calendar">
+                <div class="ticket-search">
+                  <span>출발일</span>
+                  <div class="date">
+                    <img src="./images/lyra-icon-CalendarBlank.svg" alt="달력아이콘">
+                    <button type="button" class="active">25 / 09 / 26</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="last-name">
+                <div class="ticket-search">
+                  <span>성</span>
+                  <div class="person">
+                    <button type="button">Last name</button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="first-name">
+                <div class="ticket-search">
+                  <span>이름</span>
+                  <div class="person">
+                    <button type="button">first name</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button>조회</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="bg"><img src="./images/reserver-bg.png" alt=""></div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+</body>
+
+</html>
