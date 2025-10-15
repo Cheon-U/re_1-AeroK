@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/popup-passenger.css">
+    <script defer src="./js/popup-passenger.js"></script>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="select-passenger">
+            <p class="popup-title">탑승객 선택</p>
+            <div class="line"></div>
+            <div class="age-box">
+                <div class="age-left">
+                    <p class="age-name">성인</p>
+                    <p>국내선: 만 13세, 국제선: 만12세 이상</p>
+                </div>
+                <div class="button-wrap"><button class="minus"><img src="./images/btn-minus.svg" draggable="false"
+                            alt="뺴기"></button><span>0</span><button class="plus"><img src="./images/btn-plus.svg"
+                            draggable="false" alt="더하기"></button>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="age-box">
+                <div class="age-left">
+                    <div class="age-name">소아</div>
+                    <p>국내선: 24개월 이상 만 13세 미만</p>
+                    <p>국제선: 24개월 이상 만 12세 미만</p>
+                </div>
+                <div class="button-wrap"><button class="minus"><img src="./images/btn-minus.svg" alt="뺴기"
+                            draggable="false"></button><span>0</span><button class="plus"><img
+                            src="./images/btn-plus.svg" alt="더하기" draggable="false"></button>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="age-box">
+                <div class="age-left">
+                    <div class="age-name">유아</div>
+                    <p>국내선: 만 13세, 국제선: 만12세 이상</p>
+                </div>
+                <div class="button-wrap"><button class="minus"><img src="./images/btn-minus.svg" alt="뺴기"
+                            draggable="false"></button><span>0</span><button class="plus"><img
+                            src="./images/btn-plus.svg" alt="더하기" draggable="false"></button>
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <div class="passenger-bottom">
+                <div class="btn-check"><a href="#void">확인</a></div>
+                <div class="age-search"><a href="#void">나이 계산기<img src="./images/icon-arrow.svg" class="toggle-icon"
+                            alt="토글아이콘" draggable="false"></a></div>
+
+                <div class="age-search-box">
+                    <input type="text" class="date-input" placeholder="YYYY-MM-DD">
+                    <div class="btn-toggle"><a href="#void">계산</a></div>
+                </div>
+
+                <div class="age-notice">
+                    <ul>
+                        <li>유아는 별도 좌석이 제공되지 않으며 보호자가 안고 착석해야 해요. 유아의 좌석 구매는 고객센터로 문의해 주세요.</li>
+                        <li>탑승 수속 시, 생년월일이 확인 가능한 서류가 필요해요.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="btn-close"><img src="./images/btn_close.png" alt="닫기"></div>
+    </div>
+    </div>
+    <!-- 팝업 크기 조정 스크립트 -->
+    <script>
+        window.onload = function () {
+            const desiredWidth = 600;
+            const desiredHeight = 780;
+
+            const widthDiff = window.outerWidth - window.innerWidth;
+            const heightDiff = window.outerHeight - window.innerHeight;
+
+            window.resizeTo(desiredWidth + widthDiff, desiredHeight + heightDiff);
+        };
+    </script>
+</body>
+
+</html>

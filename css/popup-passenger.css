@@ -1,0 +1,238 @@
+:root {
+    --primary-color: #002554;
+    --bg-color: #05183B;
+    --sub-color: #FFB81c;
+    --font-color-bk: #222222;
+    --font-color-gr: #6c737e;
+    --font-color-dark: #666666;
+    --title1: 48px;
+    --title2: 40px;
+    --title3: 30px;
+    --title4: 26px;
+    --title5: 24px;
+    --text1: 22px;
+    --text2: 20px;
+    --text3: 18px;
+    --text4: 16px;
+    --bold: 700;
+    --semi: 600;
+    --medium: 500;
+    --regular: 400;
+
+}
+
+html {
+    font-family: "Pretendard", sans-serif;
+    font-weight: var(--regular);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.popup {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 45px 45px;
+    /* background: #fff; */
+    /* background-color: rgba(0, 0, 255, 0.1); */
+    position: relative;
+    /* 토글 닫힘 높이값 */
+    /* overflow: hidden; */
+    transition: max-height 0.4s ease;
+    box-sizing: border-box;
+
+}
+
+.popup.expanded {
+    max-height: 900px;
+}
+
+.select-passenger {}
+
+.popup-title {
+    font-size: var(--title4);
+    font-weight: var(--semi);
+    color: #062551;
+    margin-bottom: 30px;
+}
+
+
+.line {
+    width: 520px;
+    height: 1px;
+    background: #ccc;
+}
+
+.age-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.age-left {
+
+    font-size: var(--text4);
+}
+
+.age-left>p {
+    margin: 10px 0;
+}
+
+.age-name {
+    font-size: var(--title5);
+}
+
+
+button img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.button-wrap {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.button-wrap>button {
+    background: #fff;
+    /* background: transparent; */
+    border-radius: 50%;
+    border: none;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    cursor: pointer;
+}
+
+
+
+.button-wrap>span {
+    font-size: var(--title3);
+    font-weight: var(--bold);
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+}
+
+
+/* 아래 하단 */
+
+.passenger-bottom {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-check>a {
+    background: var(--bg-color);
+    color: #fff;
+    display: block;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 20px;
+    font-size: var(--text3);
+}
+
+.age-search {
+    font-size: var(--text3);
+    gap: 20px;
+}
+
+.age-notice li {
+    list-style: disc;
+    font-size: var(--text4);
+    font-weight: var(--regular);
+    padding: 10px;
+}
+
+.age-notice li::marker {
+    font-size: 0.6rem;
+    vertical-align: middle;
+}
+
+.age-notice {
+    background: #ededed;
+    width: 520px;
+    height: 110px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 40px;
+}
+
+/* 나이계산기 추가 */
+/* 높이 110px 증가 */
+.age-search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    /* box-sizing: border-box; */
+    font-size: var(--text3);
+
+}
+
+.age-search-box.open {
+    max-height: 200px;
+}
+
+.age-search img.toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.age-search img.toggle-icon.rotate {
+    transform: rotate(180deg);
+}
+
+.date-input {
+    display: block;
+    width: 390px;
+    height: 60px;
+    /* background-color:skyblue; */
+    border: transparent;
+    border-bottom: 1px solid grey;
+}
+
+.date-input::placeholder {
+    font-size: var(--text2);
+    color: #ddd;
+    padding-left: 20px;
+}
+
+.btn-toggle>a {
+    background: #d9d9d9;
+    color: var(--font-color-dark);
+    display: block;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    transition: 0.6s;
+}
+
+.btn-toggle>a:hover {
+    background: var(--bg-color);
+    color: #fff;
+}
+
+/* 닫기 버튼 */
+.btn-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}

@@ -34,13 +34,15 @@ em,i,address{font-style:normal;}
     position: absolute;
     top: -99999px;
 }
+/* body */
 html{
     font-size: 10px;
-}
-/* body */
-body{
-    /* font-size: 16px; */
     /* 폰트이름이 한글이면 무조건 따옴표 붙이기 */
     font-family: Pretendard,"돋움",sans-serif;
     color: #222;
+}
+
+html,
+body {
+  height: 100%;
 }
