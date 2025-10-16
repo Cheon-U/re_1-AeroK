@@ -806,8 +806,9 @@ section {
 } */
 
 .faq-list>.faq-item {
-  max-width: calc((100% - 60px) / 4);
-  display: block;
+  /* 크기가 줄어들면서 가로로 질문을 넘길려면 */
+  /* max-width: calc((100% - 60px) / 4); 삭제
+  display: block; 삭제*/
   height: 220px;
   /* outline: 2px solid #d9d9d9; */
   border: 2px solid #d9d9d9;
