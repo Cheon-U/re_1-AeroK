@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/rangePlugin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ko.js"></script>
+    <script defer src="./js/popup-calender-end.js"></script>
     <title>popup-cal-end</title>
 
 </head>
@@ -19,6 +20,7 @@
     <main>
 
         <div class="popup-title">도착일 선택</div>
+        <div class="showDate blind" ></div>
         <!-- 캘린더1 -->
         <div class="calendar">
             <div class="startDate">
@@ -29,54 +31,10 @@
             <div class="endDate">
             </div>
         </div>
+        <!-- 닫기버튼 -->
+        <div class="btn-close"><img src="./images/btn_close.png" alt="닫기"></div>
 
-        <script>
-            let showDate = document.querySelector(".showDate");
-            flatpickr(".startDate", {
-                "plugins": [new rangePlugin({ input: ".endDate" })],
-                minDate: "today",
-                maxDate: "2025-12-31",
-                showMonths: 2,
-                inline: true,
-                locale: "ko", // 한국어 적용
-                onChange: function (selectedDates, dateStr, instance) {
-                    // 날짜가 2개 선택된 상태에서 다시 같은 날짜를 클릭한 경우 → 초기화
-                    if (
-                        selectedDates.length === 2 &&
-                        previousDates.length === 2 &&
-                        selectedDates[0].getTime() === previousDates[0].getTime() &&
-                        selectedDates[1].getTime() === previousDates[1].getTime()
-                    ) {
-                        instance.clear();
-                        showDate.innerHTML = "선택된 날짜 없음";
-                        previousDates = [];
-                        return;
-                    }
 
-                    // 날짜 출력
-                    if (selectedDates.length === 1) {
-                        const start = instance.formatDate(selectedDates[0], "Y-m-d");
-                        showDate.innerHTML = `출발일: ${start}`;
-                    } else if (selectedDates.length === 2) {
-                        const start = instance.formatDate(selectedDates[0], "Y-m-d");
-                        const end = instance.formatDate(selectedDates[1], "Y-m-d");
-                        showDate.innerHTML = `출발일: ${start}<br>도착일: ${end}`;
-                    } else {
-                        showDate.innerHTML = "선택된 날짜 없음";
-                    }
-
-                    // 현재 선택 상태 저장
-                    previousDates = [...selectedDates];
-                },
-                onDayCreate: function (dObj, dStr, fp, dayElem) {
-                    // 일(dayElem.dateObj)의 요일 확인 (0: 일요일, 6: 토요일)
-                    const date = dayElem.dateObj;
-                    if (date.getDay() === 0) { // 일요일
-                        dayElem.classList.add("sunday");
-                    }
-                }
-            });
-        </script>
     </main>
 </body>
 
