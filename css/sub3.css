@@ -1,0 +1,182 @@
+main .subinner {
+    max-width: 1400px;
+    margin: 120px auto;
+}
+
+.baggage-wrap {
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.title>h2 {
+    font-size: 4rem;
+    color: #002554;
+    margin-bottom: 2rem;
+}
+
+.title>p {
+    font-size: 2rem;
+    color: #222222;
+    margin-bottom: 6rem;
+}
+
+.baggage-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.note-list {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding-top: 30px;
+}
+
+.baggage-fee {
+    margin: 40px 0 110px;
+    color: #333;
+}
+
+/* 헤더 */
+.baggage-header {
+    display: flex;
+    background-color: #E7EAEE;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.baggage-header .col {
+    width: 700px;
+    padding: 14px 0;
+    border-bottom: 2px solid #fff;
+}
+.baggage-header .col:first-child {
+    border-right: 2px solid #fff;
+}
+
+/* 본문 */
+.baggage-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    max-width: 1400px;
+    background-color: #F6F6F6;
+
+}
+
+.baggage-body .type {
+    width: 699px;
+    padding: 20px;
+    line-height: 2;
+     border-right: 2px solid #fff;
+}
+
+.baggage-body .type:first {
+     border-right: 2px solid #fff;
+}
+
+.baggage-body small {
+    color: #737373;
+}
+
+.baggage-body strong {
+    font-size: 3rem;
+}
+
+.baggage-body .Additional {
+    padding: 10px;
+}
+
+.baggage-body .fee {
+    width: 699px;
+    /* padding: 20px; */
+    text-align: center;
+    line-height: 1.6;
+    border-right: 2px solid #fff;
+}
+
+
+/* 표리스트*/
+.item-table {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 15px;
+    color: #333;
+}
+
+.item-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8fafc;
+}
+
+.item-table td {
+    padding: 18px 20px;
+    vertical-align: top;
+    border-bottom: 2px solid #ffffff;
+}
+
+.item-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* 왼쪽 아이콘 영역 */
+.item-table .icon {
+    width: 320px;
+    background-color: #E7EAEE;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-table .icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* 오른쪽 설명 영역 */
+.item-table .desc {
+    width: 1080px;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    background-color: #F6F6F6;
+    border-left: 2px solid #ffffff;
+}
+
+.item-table tr:nth-child(2) td.icon {
+    height: 92.38px;
+}
+
+.item-table tr:nth-child(4) td.icon {
+    height: 145.75px;
+}
+
+/* 유의사항 */
+
+.note-wrap {
+    width: 100%;
+    height: 310px;
+    background: #EEEEEE;
+    margin-top: 90px;
+}
+
+.note {
+    padding: 40px 50px;
+}
+
+.note>p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.note li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}

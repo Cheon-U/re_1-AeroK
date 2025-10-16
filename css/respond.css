@@ -464,6 +464,10 @@
 
 
   /* section_3 */
+  .notice-wrap{
+    height:100%;
+  }
+  
   .notification-box .inner {
     margin-top: 72px;
     margin-bottom: 48px;
