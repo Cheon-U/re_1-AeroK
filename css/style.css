@@ -746,6 +746,8 @@ section {
   display: flex;
   align-items: center;
   padding: 0 30px;
+  /* flex-wrap: nowrap; 기본 */
+  white-space: nowrap;
 }
 
 .faq-tab>.tab {
