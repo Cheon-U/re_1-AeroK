@@ -30,7 +30,7 @@ html {
     font-size: 10px;
 }
 
-.blind{
+.blind {
     position: absolute;
     top: -99999px;
 }
@@ -135,7 +135,7 @@ html {
 }
 
 
-/* 닫기 버튼 */
+/* 닫기버튼 */
 .btn-close {
     position: absolute;
     top: 15px;

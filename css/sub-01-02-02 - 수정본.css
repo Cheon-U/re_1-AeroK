@@ -1,0 +1,109 @@
+section{
+  overflow: hidden;
+
+  background:url(../images/map2.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+/*page location*/
+.page-location-wrap {
+  display: flex;
+  position: absolute;
+  font-size: var(--text4);
+  font-weight: var(--regular);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 1600px;
+  width: 100%;
+
+  top: 14.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
+  justify-content: flex-end;
+  z-index: 3;
+}
+
+
+.ticket-wrap .inner{
+  /* height:calc((var(--vh) * 100) - 20rem); */
+  position:absolute;
+
+}
+
+/* 메인타이틀 */
+.section-title {
+  /* position: absolute; */
+
+  z-index: 10;
+  color: #fff;
+  /* top: 0;
+  left: 0; */
+  margin-bottom: 220px;;
+  width: 320px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background: #05183B;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ticket-search-wrap {
+  position: relative;
+  height:auto;
+}
+
+.tab-menu-list {
+  display: flex;
+}
+
+.tab-menu-list .active {
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+}
+
+.tab-menu-list>li {
+  width: 50%;
+  height: 60px;
+  background: #001C40;
+  text-align: center;
+  line-height: 60px;
+  font-size: var(--text3);
+  font-weight: var(--regular);
+  margin-right: 1px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+.ticket-menu-wrap {
+  /* position: absolute; */
+  bottom:0px;
+  width: 100%;
+}
+
+.ticket-menu-wrap .ticket1 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.itinerary>button {
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.date>button {
+  border: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  background: transparent;
+  cursor: pointer;
+}
