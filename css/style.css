@@ -475,9 +475,9 @@ section {
 .notification-box{
   width:100%;
   height:100%;
-  /* display:flex;
+  display:flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 
 .notification-box .inner{
@@ -624,9 +624,9 @@ section {
 
 /* section 4 - 다양한 혜택, 자주하는 질문*/
 .FAQ{
-  /* display:flex;
+  display:flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 
 .FAQ .inner{
@@ -809,8 +809,8 @@ section {
 } */
 
 .faq-list>.faq-item {
-  max-width: calc((100% - 60px) / 4);
-  display: block;
+  /* max-width: calc((100% - 60px) / 4);
+  display: block; */
   height: 220px;
   /* outline: 2px solid #d9d9d9; */
   border: 2px solid #d9d9d9;
