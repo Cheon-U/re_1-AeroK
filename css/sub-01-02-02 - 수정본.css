@@ -27,17 +27,20 @@ section{
 
 
 .ticket-wrap .inner{
-  height:calc((var(--vh) * 100) - 20rem);
+  /* height:calc((var(--vh) * 100) - 20rem); */
+  position:absolute;
+
 }
 
 /* 메인타이틀 */
 .section-title {
-  position: absolute;
+  /* position: absolute; */
 
   z-index: 10;
   color: #fff;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
+  margin-bottom: 220px;;
   width: 320px;
   height: 70px;
   line-height: 70px;

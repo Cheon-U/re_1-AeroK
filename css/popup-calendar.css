@@ -30,6 +30,11 @@ html {
     font-size: 10px;
 }
 
+.blind {
+    position: absolute;
+    top: -99999px;
+}
+
 .popup-title {
     font-size: var(--title4);
     font-weight: var(--semi);
@@ -127,4 +132,13 @@ html {
 .flatpickr-current-month input.cur-year {
     color: var(--main-color-blue);
     font-weight: 600;
+}
+
+
+/* 닫기버튼 */
+.btn-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
 }
